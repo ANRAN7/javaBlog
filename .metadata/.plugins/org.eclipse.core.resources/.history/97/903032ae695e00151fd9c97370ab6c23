@@ -1,0 +1,36 @@
+package net.peace.ref;
+
+import java.util.Map;
+
+public class Test {
+	/**
+	 * 
+	* @Title: setValues 
+	* @Description: 实现把map的值动态赋值到一个类的实例（由传入的类实例化）中。并返回这个实例
+	* @param @param map  用来包含数据值（key-属性名称，value-对应的值）
+	* @param @param cls  传入的类型
+	* @param @return    设定文件 
+	* @return Object    返回类型 
+	* @throws 
+	* @author peace w_peace@163.com
+	 */
+	/**
+	 * 
+	* @Title: setValues 
+	* @Description: TODO(这里用一句话描述这个方法的作用) 
+	* @param map
+	* @param cls
+	* @return  :Object   
+	* @throws 
+	* @author peace w_peace@163.com
+	 */
+	public Object setValues(Map map,Class cls){
+		
+		
+		return cls;
+	}
+   
+    public static void main(String[] args) {
+		
+	}
+}

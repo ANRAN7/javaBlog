@@ -1,0 +1,45 @@
+package net.peace.ref;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+import java.util.Stack;
+
+public class TestRef {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Stack<E>
+       try {
+    	   //装载指定的类
+		Class c=Class.forName("java.util.Stack");
+		//获得指定类名的方法；
+		Method ms[]=c.getDeclaredMethods();
+		//判断是否属于特定的类
+		System.out.println(c.isInstance(new Stack<>()));
+		for(Method m:ms){
+			//获得方法的一些信息；
+			System.out.println(m.getModifiers()+" "+m.getReturnType()+" "+m.getName());
+			//获得参数属性类
+			Class[] cc=m.getParameterTypes();
+			for(Class p:cc){
+				//获得类名
+				System.out.println(p.getName());
+			}
+			//获得异常类
+			Class[] ce=m.getExceptionTypes();
+			for(Class p:ce){
+				System.out.println(p.getName());
+			}
+		}
+		System.out.println("******************************");
+		Constructor[] con=c.getDeclaredConstructors();
+		for(Constructor p:con){
+			System.out.println(p);
+		}
+	} catch (ClassNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	}
+
+}

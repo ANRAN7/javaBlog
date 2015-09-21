@@ -1,0 +1,17 @@
+(1). 打开Eclipse，选择打开" Window －－ Preferences"。
+
+(2). 在目录树上选择"Java－－Editor－－Content Assist"，在右侧的"Auto-Activation"找到"Auto Activation triggers for java"选项。默认触发代码提示的就是"."这个符号。
+
+(3). 在"Auto Activation triggers for java"选项中，在"."后加上abc字母。然后"Apply"，点击"OK"。
+
+(4). 选择"File－－Export"，在弹出的窗口中选择"General－－Perferences"，点击"Next"。
+
+(5). 选择"Export all"，然后指定保存路径，点击"Finish"按钮后生成"*.epf"文件。
+
+(6). 用文本编辑器编辑"*.epf"文件： 查找".abc"，然后把".abc"修改为：.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ(, @然后保存"*.epf"文件。
+
+(7). 选择"File－－Import"，在弹出的窗口中选择"General－－Perferences"，点击"Next"。
+
+(8). 选择"*.epf"文件，选择"Import all"，然后点击"Finish"按钮完成操作。
+
+此时Eclipse能根据刚才编辑的英文字母（大写或小写）触发代码提示，携带录入，方便快捷。

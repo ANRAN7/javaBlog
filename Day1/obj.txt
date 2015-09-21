@@ -1,0 +1,3 @@
+com.rlovep.bean.Person
+id=22
+name=peace

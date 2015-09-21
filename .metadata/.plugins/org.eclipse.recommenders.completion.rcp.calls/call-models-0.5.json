@@ -1,0 +1,7 @@
+{
+  "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar",
+    "status": "RESOLVED"
+  }
+}

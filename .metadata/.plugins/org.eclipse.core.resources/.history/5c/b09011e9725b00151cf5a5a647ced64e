@@ -1,0 +1,73 @@
+package net.peace.io;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.sql.Date;
+/*
+ *此类用来测试过滤流，包括buff和data流
+ */
+public class StreamBUff {
+	/*
+	*********************************************************************************************************
+	*                                        testbuff()
+	*
+	* Description ： This function test BufferedInputStream and BufferedOutputStream.
+	*
+	* Arguments   : None.
+	*
+	* Returns     : None
+	*
+	* Note(s)     : None
+	* 
+	* Author      ：peace 
+	*********************************************************************************************************
+	*/
+	public void testbuff(){
+		long starttime=new java.util.Date().getTime();
+		BufferedInputStream Bio=null;
+		BufferedOutputStream Bos=null;
+		try {
+			Bio=new BufferedInputStream(new FileInputStream("/home/peace/if.py"));
+			Bos=new BufferedOutputStream(new FileOutputStream("/home/peace/if1.py"));
+			byte[] buf=new byte[1024];
+			int len=0;
+			while((len=Bio.read(buf))>=0){
+				Bos.write(buf,0,len);
+			}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			if(Bio!=null){
+				try {
+					Bio.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			if(Bos!=null){
+				try {
+					Bos.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+		long endtime=new java.util.Date().getTime();
+		System.out.println((endtime-starttime));
+	}
+	public static void main(String[] args) {
+		StreamBUff streamBUff=new StreamBUff();
+		streamBUff.testbuff();
+	}
+
+}

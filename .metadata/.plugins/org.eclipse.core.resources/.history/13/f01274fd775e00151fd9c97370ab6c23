@@ -1,0 +1,53 @@
+package net.peace.Thread;
+
+import java.awt.Color;
+import java.awt.Graphics;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class TestMovalBall extends JFrame {
+	private Mypanel mp;
+	public TestMovalBall() {
+		this.setSize(600,500);
+		this.setLocation(200,100);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		mp=new Mypanel(40, 50);
+		this.add(mp);
+		this.setVisible(true);
+	}
+	class Mypanel extends JPanel{
+		int x,y;
+		public Mypanel(int x,int y){
+			this.x=x;
+			this.y=y;
+			
+		}
+		@Override
+		public void paint(Graphics g) {
+			// TODO Auto-generated method stub
+			super.paint(g);
+			g.setColor(Color.red);
+		    g.fillOval(x, y, 50, 50);
+		
+		}
+	}
+	public static void main(String[] args) {
+		//new TestMovalBall();
+		Reflash f=new Reflash();
+		f.start();
+		for(int i=1;i<10;i++){
+			System.out.println("main"+i);
+		}
+	}
+
+}
+class Reflash extends Thread{
+	@Override
+	public void run() {
+		for(int i=1;i<10;i++){
+			System.out.println("Reflash"+i);
+		}
+		super.run();
+	}
+}

@@ -1,0 +1,210 @@
+[
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b90302506968cb6017c2382cd0f06c0ab077ceff",
+    "jarFileModificationDate": "2015-04-20T08:39:11+08:00",
+    "location": "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5b2c7f1a4386b6c877fd5cac831846dcfa9a6cae",
+    "jarFileModificationDate": "2015-04-20T08:39:11+08:00",
+    "location": "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3d0c9cf70a8b10ae6a993145f597739b6578f4af",
+    "jarFileModificationDate": "2015-04-20T08:39:11+08:00",
+    "location": "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunec.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3b23eaa7a6f71ab0b3c3fe55bee48d58cd8b18dd",
+    "jarFileModificationDate": "2014-10-24T17:35:59+08:00",
+    "location": "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/java-atk-wrapper.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "951bbc16472e55c8a9af558254d5cb2e8a47bfb8",
+    "jarFileModificationDate": "2015-04-20T08:39:11+08:00",
+    "location": "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "19074b862cdf64721d47a301987ce9dd6e82aa88",
+    "jarFileModificationDate": "2015-04-20T08:39:11+08:00",
+    "location": "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/cldrdata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5fe574d21b76d9c7c826860c671dd16f6aa65f56",
+    "jarFileModificationDate": "2015-04-20T08:39:11+08:00",
+    "location": "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "net.mindview.util",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ff0024ee96a28db9af5c39739ba1557730471bba",
+    "jarFileModificationDate": "2015-09-06T22:02:43+08:00",
+    "location": "/home/peace/workspace/javaThink/test/net.mindview.util.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ca96ed4f7a477843973c0a1ab3e55a1e2a3a600e",
+    "jarFileModificationDate": "2015-04-20T08:39:11+08:00",
+    "location": "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "24d47b5999242470bb67aea76fc0814b37a95cef",
+    "jarFileModificationDate": "2015-04-20T09:36:10+08:00",
+    "location": "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/icedtea-sound.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6586e9fed917b7f8210d72784b231fac32a37c4d",
+    "jarFileModificationDate": "2015-04-20T08:39:11+08:00",
+    "location": "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/nashorn.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8a76fc19107c4dec377e6fe7dd8e1d9b5703ab33",
+    "jarFileModificationDate": "2015-04-20T08:39:11+08:00",
+    "location": "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunpkcs11.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ac7e25b12b360f3fa142e0f9f16cca0334517162",
+    "jarFileModificationDate": "2015-04-20T08:39:11+08:00",
+    "location": "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/zipfs.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "936c974e058a861663122f26ac376ab3cb926f22",
+    "jarFileModificationDate": "2015-04-20T08:39:11+08:00",
+    "location": "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4d14153556b3d4dc0c9bc9ff8d92098c93c89bcb",
+    "jarFileModificationDate": "2015-04-20T08:39:11+08:00",
+    "location": "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f549f4d639ec9c6e0aba036b8ed2317321978279",
+    "jarFileModificationDate": "2015-04-20T08:39:12+08:00",
+    "location": "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar",
+    "javaRuntime": true
+  }
+]

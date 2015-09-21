@@ -1,0 +1,55 @@
+package net.peace.reg;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import javax.activation.MailcapCommandMap;
+//这个类的主要功能，读取指定网页的邮箱账号；
+public class TestEmail {
+	public static void main(String[] args) {
+		//System.out.println(new TestFile("./01.htm"));
+	List<String> ss=getEmail(new TestFile("./01.htm").toString());
+		//List<String> ss=getEmail("...weee@163.com,w_peace12@163.com");
+	PrintWriter pw=null;
+	try {
+		pw=new PrintWriter(new BufferedWriter(new FileWriter("mail.txt")));
+		for(String line:ss){
+			pw.println(line);
+		}
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+	}
+	/*
+	*********************************************************************************************************
+	*                                        List<String> getEmail(String str)
+	*
+	* Description ： 这个实现了在字符串中或去邮箱账号
+	*
+	* Arguments   : 字符串
+	*
+	* Returns     : 匹配的邮箱账号列表：List<String>
+	*
+	* Note(s)     : 使用了正则表达式"[a-zA-Z][\\w\\.-]*\\w+@[\\w\\.-]*\\w+\\.\\w{2,5}"：以字母开头，@前面必须为词字符，点后面必须在2个词字符以上三个词字符一下
+	* 
+	* Author      ：peace 
+	*********************************************************************************************************
+	*/
+	public static List<String> getEmail(String str) {
+		List<String> es = new ArrayList<String>();
+		Pattern p = Pattern.compile("[a-zA-Z][\\w\\.-]*\\w+@[\\w\\.-]*\\w+\\.\\w{2,5}");//[
+		Matcher m = p.matcher(str);
+		while(m.find()) {
+			es.add(m.group());
+		}
+		return es;
+	}
+}

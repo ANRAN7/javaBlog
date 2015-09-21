@@ -1,0 +1,11 @@
+127.0.0.1 - - [08/Sep/2015:19:31:38 +0800] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [08/Sep/2015:19:31:49 +0800] "GET /Helloworkd/test.jsp HTTP/1.1" 200 260
+127.0.0.1 - - [08/Sep/2015:19:31:50 +0800] "GET /favicon.ico HTTP/1.1" 404 973
+127.0.0.1 - - [08/Sep/2015:19:31:53 +0800] "GET /Helloworkd/ HTTP/1.1" 404 973
+127.0.0.1 - - [08/Sep/2015:19:32:14 +0800] "GET /Helloworkd/ HTTP/1.1" 404 973
+127.0.0.1 - - [08/Sep/2015:19:33:32 +0800] "GET /Helloworkd/servlet/Hello HTTP/1.1" 500 3390
+127.0.0.1 - - [08/Sep/2015:19:34:27 +0800] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [08/Sep/2015:19:34:36 +0800] "GET /Helloworkd//servlet/Hello HTTP/1.1" 500 3390
+127.0.0.1 - - [08/Sep/2015:19:36:44 +0800] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [08/Sep/2015:19:36:48 +0800] "GET /Helloworkd//servlet/Hello HTTP/1.1" 200 228
+127.0.0.1 - - [08/Sep/2015:19:37:09 +0800] "POST /Helloworkd//servlet/Hello HTTP/1.1" 200 280

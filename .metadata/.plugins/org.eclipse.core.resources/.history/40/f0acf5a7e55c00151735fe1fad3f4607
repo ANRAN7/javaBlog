@@ -1,0 +1,23 @@
+package net.peace.ref;
+
+import java.lang.reflect.Method;
+import java.util.Stack;
+
+public class TestRef {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Stack<E>
+       try {
+		Class c=Class.forName("java.util.Stack");
+		Method ms[]=c.getDeclaredMethods();
+		for(Method m:ms){
+			System.out.println(m.getModifiers()+" "+m.getReturnType()+" "+m.getName());
+		}
+	} catch (ClassNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	}
+
+}

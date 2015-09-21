@@ -1,0 +1,27 @@
+package net.peace.ref;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
+public class TestArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			Class c=Class.forName("java.lang.String");
+			//数组对对象的构建
+			Object str=Array.newInstance(c, 10);//第一个参数建立的类别。第二个参数建立的数组长度
+			Array.set(str, 0, "peace");
+			String ss=(String)Array.get(str, 0);
+			System.out.println(ss);
+			String[] a=(String[])str;
+			System.out.println(a[0]);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+
+	}
+
+}

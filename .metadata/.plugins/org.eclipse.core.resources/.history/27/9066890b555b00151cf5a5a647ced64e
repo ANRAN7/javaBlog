@@ -1,0 +1,17 @@
+package net.peace.io;
+
+import java.io.File;
+
+public class TestFile2 {
+public static void main(String[] args) {
+	File f= new File("/home/peace/workspace/javaThink");
+	String[] fns=f.list();
+	for(String file:fns){
+		System.out.println(file);
+	}
+	File[] fs=f.listFiles();
+	for(File fs1:fs){
+		System.out.println(fs1.getName()+":"+fs1.length());
+	}
+}
+}

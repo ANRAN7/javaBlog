@@ -1,0 +1,2229 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="http://global.tianyaui.com/global/gnav/css/nav.css" rel="stylesheet" type="text/css" />
+		<link href="/css/general.css" rel="stylesheet" type="text/css" />
+		<link href="/css/bulou.css" rel="stylesheet" type="text/css" />
+		
+		<style>
+			IMG{
+			max-width:960px;
+			width:expression(this.width>960?"960px":true);
+			overflow:hidden;
+			}
+		</style>
+
+	<a class="digu" href="http://www.w3school.com.cn/">Visit W3School</a>	 
+
+ 
+ 
+
+<script type="text/javascript" charset="utf-8" src="http://global.tianyaui.com/global/gnav/js/global-all.js"></script>
+
+ 
+ 
+
+
+
+<script type="text/javascript" charset="utf-8" src="/js/groupCommon.js"></script>
+
+		<script type="text/javascript">
+		function outsideShow(s, id){
+			var outside=document.getElementById(id);
+			if (s=="show") {
+			outside.style.display="block";}
+			else{
+			outside.style.display="none";}
+	
+		}
+
+	//bbs跳转分页
+	function GoPage(){
+		var pageCount=2;
+		var pageIds=document.getElementsByName("pageId");
+		var curPageNo=1;
+		if(pageIds.length>1){
+			curPageNo=pageIds[0].value;
+			if(isNaN(curPageNo)||curPageNo==''){
+				curPageNo=pageIds[1].value;
+			}
+		}
+		if(isNaN(curPageNo) || curPageNo<1){
+			curPageNo=1;
+		}else if(curPageNo>pageCount){
+			curPageNo=pageCount;
+		}
+		window.location="showArticle.jsp?groupId=93803&articleId=255105449041749990113803&curPageNo="+curPageNo;
+	}
+	/*权限判断:来吧助理以上的成员,系统管理员,有数据权限的用户,非权限用户不显示js*/
+	
+	
+</script>
+<script src="http://music.tianya.cn/hi.htm"></script>
+		<meta name="keywords"
+			content="IT,互联网,来吧,圈子,群组,天涯,社区" />
+		<meta name="description"
+			content="女岁。天涯来吧，全球华人网上家园" />
+		<title>大家留下email交友吧_email_天涯来吧_天涯社区</title>
+	</head>
+	<body>
+	
+		<center>
+
+		<!-- 全局上导航开始 -->
+		<!--<script type="text/javascript" charset="utf-8" src="http://global.tianyaui.com/global/gnav/js/nav_top.js"></script>-->
+		<!-- 全局上导航结束 -->
+		<div class="wrapper">
+		<!-- 页面主体区-开始 -->
+		<div id="mainDiv">
+		
+		<div class="body">
+		                                   
+		<script language="javascript" src="http://static.tianyaui.com/js/global/guidejs/tianyaTopGuideJs100percent.js"></script>
+
+		<form method="post" id="form1" name="form1" action="/tribe/showArticle.jsp">
+			<input type="hidden" name="idwriter" value="0" />
+			<input type="hidden" name="groupId" value="93803" />
+			<input type="hidden" name="articleId" value="255105449041749990113803" />
+			<input type="hidden" name="curPageNo" value="1" />
+			<input type="hidden" name="hiddenState" id="hiddenState" value="1"/>
+			<div class="article_box">
+			
+				
+				<div id="nav_trail" class="bottomline_dashed"
+					style="background-color: #F5F9FA">
+					<ul>
+						<li>
+							<a href="http://groups.tianya.cn">天涯来吧 </a>
+						</li>
+						<li>
+							<a href="http://13803.groups.tianya.cn">email</a>
+						</li>
+						<li>
+							<a
+								href="discussionArea.jsp?groupId=93803">讨论区</a>
+						</li>
+						<li class="nav_trail_last ">
+							本帖
+						</li>
+					</ul>
+				</div>
+				
+				<div id="firstAuthor" class="mtime" style="word-wrap: break-word;">
+
+					<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+						
+						<tr>
+						<td align=right>
+						<div class="share">
+						   <ul id="share">
+						
+							<li style="width:90px;"><a class="toshare" href="#" onmouseover="outsideShow('show', 'outside');return false;" onmouseout="outsideShow('hidden', 'outside');return false;">分享到外站</a>
+							<div class="webs" id="outside" onmouseover="outsideShow('show', 'outside');return false;" onmouseout="outsideShow('hidden', 'outside');return false;">
+							<span><a class="tencent rline" href="javascript:(function(){window.open('http://v.t.qq.com/share/share.php?title='+encodeURI(document.title)+'&amp;url='+encodeURIComponent(document.location)+'&amp;appkey='+encodeURI('c0b16ae5ed7f4d6599739d2a2cbb9175')+'&amp;site='+''+'&amp;pic='+encodeURI('')+'','_blank','width=700, height=680, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no');})()">腾讯微博</a></span>
+							<span><a class="digu" href="javascript:(function(){window.open('http://www.diguff.com/diguShare/bookMark_FF.jsp?title='+encodeURIComponent(document.title)+'&amp;url='+encodeURIComponent(location.href),'_blank','width=580,height=310');})()">嘀咕</a></span>
+							<span><a class="sinat rline" href="javascript:void((function(s,d,e,r,l,p,t,z,c){x=document;y=window;if(x.selection){Q=x.selection.createRange().text;}else%20if(y.getSelection){Q=y.getSelection();}else%20if(x.getSelection){Q=x.getSelection();};var%20f='http://v.t.sina.com.cn/share/share.php?',u=z||d.location,p=['url=',e(u)+e('\n')+e(Q),'&amp;title=',e(t||d.title),'&amp;source=',e(r),'&amp;sourceUrl=',e(l),'&amp;content=',c||'gb2312','&amp;pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','','','','utf-8'));">新浪微博</a></span>
+							<span><a class="douban" href="javascript:var u='http://www.douban.com/recommend/?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);window.open(u,'douban','toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330');void(0)">豆瓣</a></span>
+							<span><a class="sohu rline" href="javascript:void((function(s,d,e,r,l,p,t,z,c){var f='http://t.sohu.com/third/post.jsp?',u=z||d.location,p=['&url=',e(u),'&title=',e(t||d.title),'&content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=660,height=470,left=',(s.width-660)/2,',top=',(s.height-470)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','','','','utf-8'));">搜狐微博</a></span>	
+							<span><a class="kaixin" href="javascript:d=document;t=d.selection?(d.selection.type!='None'?d.selection.createRange().text:''):(d.getSelection?d.getSelection():'');void(kaixin=window.open('http://www.kaixin001.com/~repaste/repaste.php?&amp;rurl='+escape(d.location.href)+'&amp;rtitle='+escape(d.title)+'&amp;rcontent='+escape(d.title),'kaixin'));kaixin.focus();">开心网</a></span>
+							<span><a class="qq rline" href="javascript:window.open('http://shuqian.qq.com/post?from=3&amp;title='+encodeURIComponent(document.title)+'&amp;uri='+encodeURIComponent(document.location.href)+'&amp;jumpback=2&amp;noui=1','favit','width=930,height=470,left=50,top=50,toolbar=no,menubar=no,location=no,scrollbars=yes,status=yes,resizable=yes');void(0)">QQ书签</a></span>
+							<span><a class="renren" href="javascript:void((function(s,d,e){if(/xiaonei\.com/.test(d.location))return;var%20f='http://share.xiaonei.com/share/buttonshare.do?link=',u=d.location,l=d.title,p=[e(u),'&amp;title=',e(l)].join('');function%20a(){if(!window.open([f,p].join(''),'xnshare',['toolbar=0,status=0,resizable=1,width=626,height=436,left=',(s.width-626)/2,',top=',(s.height-436)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent));">人人网</a></span>
+							<span><a class="baidu rline" href="javascript:u=location.href;t=document.title;c%20=%20&quot;&quot;%20+%20(window.getSelection%20? window.getSelection() : document.getSelection ? document.getSelection() : document.selection.createRange().text);var url=&quot;http://cang.baidu.com/do/add?it=&quot;+encodeURIComponent(t)+&quot;&amp;iu=&quot;+encodeURIComponent(u)+&quot;&amp;dc=&quot;+encodeURIComponent(c)+&quot;&amp;fr=ien#nw=1&quot;;window.open(url,&quot;_blank&quot;,&quot;scrollbars=no,width=600,height=450,left=75,top=20,status=no,resizable=yes&quot;); void 0">百度搜藏</a></span>		
+							<span><a class="bai" href="javascript:location.href='http://bai.sohu.com/app/share/blank/add.do?link='+location.href">白社会</a></span>
+							<span><a class="yahoo rline" href="#" onclick="window.open('http://myweb.cn.yahoo.com/popadd.html?url='+encodeURIComponent(document.location.href)+'&title='+encodeURIComponent(document.title), 'Yahoo','scrollbars=yes,width=780,height=455,left=80,top=80,status=yes,resizable=yes');return false;">雅虎收藏</a></span>
+							<span><a class="live" href="javascript:d=document;t=d.selection?(d.selection.type!='None'?d.selection.createRange().text:''):(d.getSelection?d.getSelection():'');void(blog=window.open('https://favorites.live.com/quickadd.aspx?url='+escape(d.title)+'&amp;newspath='+escape(d.location.href)+'&amp;subtitle='+escape(t),'Live'));blog.focus();">MSN空间</a></span>
+							<div class="clear"></div>
+							</div>
+						
+						</li>
+						</ul>
+					   </div>
+
+					   </td>
+						</tr>
+						
+						<tr>
+							<!-- -帖子标题 -->
+							<td align=center>
+								<table style="margin-top: 15px;" cellspacing="2" cellpadding="2"
+									bordercolor="#ffffff" border="0" align="center">
+									<tbody>
+										<tr>
+											<td class="mtitle" bgcolor="#336699" align="center">
+											<div style="word-wrap: break-word;">
+												<font size="+1" style="color:#FFFFFF">
+												
+													『<a target="_top" style=" font-weight:bold"
+													href="http://13803.groups.tianya.cn"><font style="color:#FFFFFF">email</font>
+													</a>』
+												
+												<span id="title" style="color:#FFFFFF">大家留下email交友吧</span>
+												</font>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</table>
+					
+					 <table bgcolor="#F5F9FA" width="100%">
+					 	<tr style='font-size:14px'>
+					 	   <td id="pageDivTop">
+							<div class="page_number">
+								共2页&nbsp; <span style='color:#0000FF'>1</span>  <a href="/tribe/showArticle.jsp?groupId=93803&articleId=255105449041749990113803&curPageNo=2" class='b1' >2</a>   <a href="/tribe/showArticle.jsp?groupId=93803&articleId=255105449041749990113803&curPageNo=2&h=n_1254814140000" >下一页</a> <a href="/tribe/showArticle.jsp?groupId=93803&articleId=255105449041749990113803&curPageNo=2">末页</a> [<a href="/tribe/showArticle.jsp?groupId=93803&articleId=255105449041749990113803&curPageNo=2#bottom" >回复此帖</a>] 
+							</div>
+						</td>
+						</tr>
+					</table> 
+					
+				</div>
+				
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=195 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<img
+									src="../images/blue_face.gif" />
+								&nbsp;
+								<font color=green size=-1>作者：<a				href="http://my.tianya.cn/13316515"
+									class="tz_auto" target="_blank">ktery</a><span value="13316515" name="userid_13316515" style="float: none; display: inline;"></span>&nbsp;提交日期：2007-08-24 18:48:00&nbsp;访问：10991&nbsp;回复：137</font>
+						</td>
+						<td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right"  style="width:35px;"><font color="#999999">楼主</font></td>
+					</tr>
+				</table>
+				<div id="content0" class="content">
+				&nbsp;女 &nbsp;true_188@gmail.com &nbsp;&nbsp;20岁
+<div class="fs-newline"></div>
+				</div>
+				<div  class="content">
+				<p style="background: none repeat scroll 0% 0% rgb(238, 238, 238);" id="my_tomy_p">
+				<a href="javascript:void(0)" class="button-my-follow" onclick="__my.action.follow('http://my.tianya.cn/interface/recommend/follow.jsp?act=addfollowbypop&username=ktery')" >关注楼主</a> 
+				<a href="javascript:void(0)" class="button-my-collect" onclick="__my.action.collect('http://my.tianya.cn/interface/user/aritcleCollect.jsp?act=addcollectbypop&type=%E6%9D%A5%E5%90%A7&title=%E5%A4%A7%E5%AE%B6%E7%95%99%E4%B8%8Bemail%E4%BA%A4%E5%8F%8B%E5%90%A7&url=http%3A%2F%2Flaiba.tianya.cn%2Ftribe%2FshowArticle.jsp%3FgroupId%3D93803%26articleId%3D255105449041749990113803&head=email&uid=&uname=')">收藏</a>
+				<a href="javascript:void(0)" class="button-my-share" onclick="__my.action.share('&url=http%3A%2F%2Flaiba.tianya.cn%2Ftribe%2FshowArticle.jsp%3FgroupId%3D93803%26articleId%3D255105449041749990113803&title=%E5%A4%A7%E5%AE%B6%E7%95%99%E4%B8%8Bemail%E4%BA%A4%E5%8F%8B%E5%90%A7&uname=ktery&uid=13316515&from=%E5%A4%A9%E6%B6%AF%E6%9D%A5%E5%90%A7&charset=utf8')">转发至天涯微博</a>
+				</p>
+				</div>
+				
+				
+				
+				
+				<div id="ReContent2589394907554643968" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-03-18 10:09:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">1#</td>
+					</tr>
+				</table>
+					<div id="content2589394907554643968" class="content">   enc.succeed@gmail.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2592635225314511790" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-04-04 21:17:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">2#</td>
+					</tr>
+				</table>
+					<div id="content2592635225314511790" class="content">   shangdonglsk@126.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2594804024842131180" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-04-16 13:49:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">3#</td>
+					</tr>
+				</table>
+					<div id="content2594804024842131180" class="content">   xxxwuxiaoyyy@126.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2598213229032941240" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-05-04 22:48:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">4#</td>
+					</tr>
+				</table>
+					<div id="content2598213229032941240" class="content">   kyle.qiao@gmail.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2601138382351804551" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-05-20 17:10:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">5#</td>
+					</tr>
+				</table>
+					<div id="content2601138382351804551" class="content">   erniu.zw@163.com
+<div class="fs-newline"></div> <div class="fs-newline"></div>叫我二牛就成了，男，26岁了
+<div class="fs-newline"></div>喜欢结交天南地北的朋友   
+					</div>
+				</div>
+				
+				<div id="ReContent2601150278141395442" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/16787047"
+									class="tz_auto" target="_blank">smakye</a><span value="16787047" name="userid_16787047" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-05-20 18:43:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">6#</td>
+					</tr>
+				</table>
+					<div id="content2601150278141395442" class="content">   怎么全是匿名？
+<div class="fs-newline"></div>我都有点不敢写了~
+<div class="fs-newline"></div>gsh@w.cn
+<div class="fs-newline"></div>（windows live 的邮箱，和hotmail一样）   
+					</div>
+				</div>
+				
+				<div id="ReContent2603786782140802015" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-06-03 23:45:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">7#</td>
+					</tr>
+				</table>
+					<div id="content2603786782140802015" class="content">   此男生猛，生人勿近（：）开玩笑）uprich@sohu.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2605037186691209042" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-06-10 17:29:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">8#</td>
+					</tr>
+				</table>
+					<div id="content2605037186691209042" class="content">   ericluj@sina.com 男 22岁   
+					</div>
+				</div>
+				
+				<div id="ReContent2613158912077871924" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-07-24 12:02:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">9#</td>
+					</tr>
+				</table>
+					<div id="content2613158912077871924" class="content">   你好:
+<div class="fs-newline"></div> &nbsp;&nbsp;&nbsp;&nbsp;我是刚毕业的大学生,很想交朋友,only普通朋友
+<div class="fs-newline"></div>　　　　　www.cinderlla@163.com .
+<div class="fs-newline"></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wodengnimen
+<div class="fs-newline"></div> 
+					</div>
+				</div>
+				
+				<div id="ReContent2615414444092651400" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-08-05 15:47:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">10#</td>
+					</tr>
+				</table>
+					<div id="content2615414444092651400" class="content">   coolcliff01@yahoo.com.tw   
+					</div>
+				</div>
+				
+				<div id="ReContent2615566797579444033" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/17052816"
+									class="tz_auto" target="_blank">yanyufei0918</a><span value="17052816" name="userid_17052816" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-08-06 11:30:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">11#</td>
+					</tr>
+				</table>
+					<div id="content2615566797579444033" class="content">   本人一哥哥 yanyufei0918@163.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2617277774718364958" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-08-15 16:48:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">12#</td>
+					</tr>
+				</table>
+					<div id="content2617277774718364958" class="content">   wbxxny@gmail.com
+<div class="fs-newline"></div> <div class="fs-newline"></div>年龄：26
+<div class="fs-newline"></div>性别：男
+<div class="fs-newline"></div>地区：甘肃
+<div class="fs-newline"></div>qq太无趣，希望可以通过e_mail交流。有意者发！   
+					</div>
+				</div>
+				
+				<div id="ReContent2619165612932635701" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-08-25 21:00:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">13#</td>
+					</tr>
+				</table>
+					<div id="content2619165612932635701" class="content">   对楼上的话深表赞同
+<div class="fs-newline"></div>aprmch@gmail.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2620019554840699175" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-08-30 11:27:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">14#</td>
+					</tr>
+				</table>
+					<div id="content2620019554840699175" class="content">   YLX857857857@163.COM &nbsp;男 交朋友   
+					</div>
+				</div>
+				
+				<div id="ReContent2621003016312279969" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-09-04 18:40:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">15#</td>
+					</tr>
+				</table>
+					<div id="content2621003016312279969" class="content">   x4long@163.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2621003196703169702" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-09-04 18:42:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">16#</td>
+					</tr>
+				</table>
+					<div id="content2621003196703169702" class="content">   x4long@163.com
+<div class="fs-newline"></div> <div class="fs-newline"></div>男 <div class="fs-newline"></div> <div class="fs-newline"></div>想找一个聊天的好朋友
+<div class="fs-newline"></div> <div class="fs-newline"></div>不是搞对象 <div class="fs-newline"></div> <div class="fs-newline"></div>本人平时一贯很低调   
+					</div>
+				</div>
+				
+				<div id="ReContent2622355336988423044" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/13939472"
+									class="tz_auto" target="_blank">tony_ly</a><span value="13939472" name="userid_13939472" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-09-12 01:36:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">17#</td>
+					</tr>
+				</table>
+					<div id="content2622355336988423044" class="content">   tony_ly@yahoo.cn &nbsp;喜欢英语和收藏   
+					</div>
+				</div>
+				
+				<div id="ReContent2622622416615910367" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-09-13 12:08:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">18#</td>
+					</tr>
+				</table>
+					<div id="content2622622416615910367" class="content">   刚上大学无聊啊,有谁可以聊会天啊?本人男20岁啊电话13808223987.现就读在四川大学.本人家住北京.四川话好难懂的,连个说话的都没有.大家多多关照啊.女孩哦.西西   
+					</div>
+				</div>
+				
+				<div id="ReContent2623040955428845122" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-09-15 18:17:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">19#</td>
+					</tr>
+				</table>
+					<div id="content2623040955428845122" class="content">   刚刚发现了一个可以*强*制*视频的免费软件!太牛了!
+<div class="fs-newline"></div>暴风*强*制*视频是一款远程智能通过防火墙*强*制*性*监*控视频的软件.可以在对方
+<div class="fs-newline"></div>不情的情况下进行*强*制**监*控.只需对方IP即可.高效稳定传输对方的视频协议数据!偷窥就是如此简单!
+<div class="fs-newline"></div>官方网站:http://use88ven.aiqqlt.cn   
+					</div>
+				</div>
+				
+				<div id="ReContent2623045999676014360" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-09-15 18:56:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">20#</td>
+					</tr>
+				</table>
+					<div id="content2623045999676014360" class="content">   帅哥一个 linxuanxin@gmail.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2623050240884434729" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-09-15 19:29:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">21#</td>
+					</tr>
+				</table>
+					<div id="content2623050240884434729" class="content">   beautifulwinter@live.cn
+<div class="fs-newline"></div> <div class="fs-newline"></div>大家好!   
+					</div>
+				</div>
+				
+				<div id="ReContent2624285801947065223" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-09-22 11:18:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">22#</td>
+					</tr>
+				</table>
+					<div id="content2624285801947065223" class="content">   &nbsp;number10@126.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2625015014019782013" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-09-26 09:37:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">23#</td>
+					</tr>
+				</table>
+					<div id="content2625015014019782013" class="content">   love_m@yeah.net 男 21   
+					</div>
+				</div>
+				
+				<div id="ReContent2626895694323781174" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-10-06 12:53:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">24#</td>
+					</tr>
+				</table>
+					<div id="content2626895694323781174" class="content">   haihua.zou@gmail.com 男 25   
+					</div>
+				</div>
+				
+				<div id="ReContent2627924159372288231" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/19666617"
+									class="tz_auto" target="_blank">you6161</a><span value="19666617" name="userid_19666617" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-10-12 01:55:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">25#</td>
+					</tr>
+				</table>
+					<div id="content2627924159372288231" class="content">   广州男22岁fu66fa@yahoo.com.cn   
+					</div>
+				</div>
+				
+				<div id="ReContent2629000819625822196" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/3892477"
+									class="tz_auto" target="_blank">xssz1001</a><span value="3892477" name="userid_3892477" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-10-17 21:11:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">26#</td>
+					</tr>
+				</table>
+					<div id="content2629000819625822196" class="content">   男  诚心交友 仅限于聊天的朋友   sxg9@msn.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2630138575649747643" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-10-24 00:21:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">27#</td>
+					</tr>
+				</table>
+					<div id="content2630138575649747643" class="content">   你好：
+<div class="fs-newline"></div>suzhou12@163.com
+<div class="fs-newline"></div> 
+					</div>
+				</div>
+				
+				<div id="ReContent2630405672721502062" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-10-25 10:54:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">28#</td>
+					</tr>
+				</table>
+					<div id="content2630405672721502062" class="content">   hello   :
+<div class="fs-newline"></div>avenwssina@.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2631420575272654130" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-10-30 22:11:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">29#</td>
+					</tr>
+				</table>
+					<div id="content2631420575272654130" class="content">   jiangyan3223031@163.com
+<div class="fs-newline"></div>蔣岩 男 85年的！   
+					</div>
+				</div>
+				
+				<div id="ReContent2631420575537420008" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-10-30 22:11:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">30#</td>
+					</tr>
+				</table>
+					<div id="content2631420575537420008" class="content">   jiangyan3223031@163.com
+<div class="fs-newline"></div>蔣岩 男 85年的！   
+					</div>
+				</div>
+				
+				<div id="ReContent2631426226163445070" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-10-30 22:55:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">31#</td>
+					</tr>
+				</table>
+					<div id="content2631426226163445070" class="content">   有谁还会把电话手机放上去的，肯定是假的，恶搞人的。呵呵，不要信这个。被人恶搞的。   
+					</div>
+				</div>
+				
+				<div id="ReContent2631800491910904599" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/16976416"
+									class="tz_auto" target="_blank">andyhujun</a><span value="16976416" name="userid_16976416" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-11-01 23:20:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">32#</td>
+					</tr>
+				</table>
+					<div id="content2631800491910904599" class="content">   andy.hujun@gmail.com
+<div class="fs-newline"></div>1987 boy
+<div class="fs-newline"></div>毕业在即 IT行业
+<div class="fs-newline"></div>最好是交流英语，职业道路....   
+					</div>
+				</div>
+				
+				<div id="ReContent2632241028854071160" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/16997103"
+									class="tz_auto" target="_blank">tornk</a><span value="16997103" name="userid_16997103" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-11-04 08:19:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">33#</td>
+					</tr>
+				</table>
+					<div id="content2632241028854071160" class="content">   sntv.wang@gmail.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2632476888240404142" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-11-05 14:49:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">34#</td>
+					</tr>
+				</table>
+					<div id="content2632476888240404142" class="content">   ktery 说:
+<div class="fs-newline"></div>女 true188@gmail.com 20岁
+<div class="fs-newline"></div> <div class="fs-newline"></div> <div class="fs-newline"></div>27811961 QQ   
+					</div>
+				</div>
+				
+				<div id="ReContent2632476948287692682" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-11-05 14:50:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">35#</td>
+					</tr>
+				</table>
+					<div id="content2632476948287692682" class="content">   27811861   
+					</div>
+				</div>
+				
+				<div id="ReContent2633439333319593484" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/18377370"
+									class="tz_auto" target="_blank">玉碎江南</a><span value="18377370" name="userid_18377370" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-11-10 19:19:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">36#</td>
+					</tr>
+				</table>
+					<div id="content2633439333319593484" class="content">   男，20,QQ985284326   
+					</div>
+				</div>
+				
+				<div id="ReContent2634532616486275310" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-11-16 16:44:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">37#</td>
+					</tr>
+				</table>
+					<div id="content2634532616486275310" class="content">   lizaofei168@gmail.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2634708843892416959" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-11-17 15:31:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">38#</td>
+					</tr>
+				</table>
+					<div id="content2634708843892416959" class="content">   hans27650@yahoo.com.cn   
+					</div>
+				</div>
+				
+				<div id="ReContent2634882690758731590" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-11-18 14:01:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">39#</td>
+					</tr>
+				</table>
+					<div id="content2634882690758731590" class="content">    　lianyilanlove@gmail.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2634906547834865062" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/18620944"
+									class="tz_auto" target="_blank">neverliving</a><span value="18620944" name="userid_18620944" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-11-18 17:06:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">40#</td>
+					</tr>
+				</table>
+					<div id="content2634906547834865062" class="content">   neverliving@163.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2635156710229807978" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-11-20 01:27:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">41#</td>
+					</tr>
+				</table>
+					<div id="content2635156710229807978" class="content">   我也留，
+<div class="fs-newline"></div> <div class="fs-newline"></div>大家交个朋友
+<div class="fs-newline"></div> <div class="fs-newline"></div>man
+<div class="fs-newline"></div> <div class="fs-newline"></div>mr.gegeliu@gmail.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2635245654642670217" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-11-20 12:58:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">42#</td>
+					</tr>
+				</table>
+					<div id="content2635245654642670217" class="content">   jt223@163.com
+<div class="fs-newline"></div>山东潍坊
+<div class="fs-newline"></div>男士   
+					</div>
+				</div>
+				
+				<div id="ReContent2635325502567418760" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/18959340"
+									class="tz_auto" target="_blank">lyglq</a><span value="18959340" name="userid_18959340" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-11-20 23:17:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">43#</td>
+					</tr>
+				</table>
+					<div id="content2635325502567418760" class="content">   dhdhdhlq@hotmai.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2636557436261166388" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-11-27 14:38:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">44#</td>
+					</tr>
+				</table>
+					<div id="content2636557436261166388" class="content">   wwwyeahcomcn@yeah.net    
+					</div>
+				</div>
+				
+				<div id="ReContent2637314656541044829" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/20454822"
+									class="tz_auto" target="_blank">极品口香糖</a><span value="20454822" name="userid_20454822" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-12-01 16:35:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">45#</td>
+					</tr>
+				</table>
+					<div id="content2637314656541044829" class="content">   男：
+<div class="fs-newline"></div>0538QQ36796523@163.com
+<div class="fs-newline"></div>QQ也在email里了
+<div class="fs-newline"></div> 
+					</div>
+				</div>
+				
+				<div id="ReContent2638225452755455290" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-12-06 14:24:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">46#</td>
+					</tr>
+				</table>
+					<div id="content2638225452755455290" class="content">   O(∩_∩)O哈哈~ <div class="fs-newline"></div>留个 <div class="fs-newline"></div>plummoon@gmail.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2638225452858552399" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-12-06 14:24:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">47#</td>
+					</tr>
+				</table>
+					<div id="content2638225452858552399" class="content">   O(∩_∩)O哈哈~ <div class="fs-newline"></div>留个 <div class="fs-newline"></div>plummoon@gmail.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2639348152979626113" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-12-12 15:37:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">48#</td>
+					</tr>
+				</table>
+					<div id="content2639348152979626113" class="content">   zach8925@gmail.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2641374167286768303" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/14035472"
+									class="tz_auto" target="_blank">greenleaf520</a><span value="14035472" name="userid_14035472" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-12-23 13:41:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">49#</td>
+					</tr>
+				</table>
+					<div id="content2641374167286768303" class="content">   lhzh.cn@gmail.com         欢迎这各位,,,<img src="img/i_smile.gif" smilieid="4" border="0" alt="" />    
+					</div>
+				</div>
+				
+				<div id="ReContent2641423932539635790" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-12-23 20:07:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">50#</td>
+					</tr>
+				</table>
+					<div id="content2641423932539635790" class="content">   jiely182@126.com欢迎各位好朋友来交流！！   
+					</div>
+				</div>
+				
+				<div id="ReContent2641537204109786872" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-12-24 10:46:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">51#</td>
+					</tr>
+				</table>
+					<div id="content2641537204109786872" class="content">   O(∩_∩)O       我也留下GT 男23jaychowg@gmail.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2642129786960760833" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-12-27 15:25:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">52#</td>
+					</tr>
+				</table>
+					<div id="content2642129786960760833" class="content">   kaixuan7251@gmail.com
+<div class="fs-newline"></div> 
+					</div>
+				</div>
+				
+				<div id="ReContent2642896513427625502" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2008-12-31 18:36:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">53#</td>
+					</tr>
+				</table>
+					<div id="content2642896513427625502" class="content">   andyzhangya@live.cn
+<div class="fs-newline"></div> 
+					</div>
+				</div>
+				
+				<div id="ReContent2643410628177508449" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/15364820"
+									class="tz_auto" target="_blank">空心梦</a><span value="15364820" name="userid_15364820" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-01-03 13:06:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">54#</td>
+					</tr>
+				</table>
+					<div id="content2643410628177508449" class="content">   男：哈尔滨人
+<div class="fs-newline"></div>liuwei518@yeah.net   
+					</div>
+				</div>
+				
+				<div id="ReContent2645317987806061454" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-01-13 19:49:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">55#</td>
+					</tr>
+				</table>
+					<div id="content2645317987806061454" class="content">   renqingjun@gmail.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2645474580139415060" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-01-14 16:04:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">56#</td>
+					</tr>
+				</table>
+					<div id="content2645474580139415060" class="content">   shuaigewukong@126.com
+<div class="fs-newline"></div>男   
+					</div>
+				</div>
+				
+				<div id="ReContent2645642131645607799" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-01-15 13:45:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">57#</td>
+					</tr>
+				</table>
+					<div id="content2645642131645607799" class="content">   huangjie3926@163.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2646264485694030776" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-01-18 22:15:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">58#</td>
+					</tr>
+				</table>
+					<div id="content2646264485694030776" class="content">   liner52010@163.com    女   
+					</div>
+				</div>
+				
+				<div id="ReContent2646831174122354862" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-01-21 23:33:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">59#</td>
+					</tr>
+				</table>
+					<div id="content2646831174122354862" class="content">   zqbymemm@sina.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2647513377867760209" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-01-25 15:48:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">60#</td>
+					</tr>
+				</table>
+					<div id="content2647513377867760209" class="content">   xiheyue@gmail.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2649449302742680077" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-02-05 02:12:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">61#</td>
+					</tr>
+				</table>
+					<div id="content2649449302742680077" class="content">   xyyzg@163.com男,28岁   
+					</div>
+				</div>
+				
+				<div id="ReContent2650127311743904273" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-02-08 17:54:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">62#</td>
+					</tr>
+				</table>
+					<div id="content2650127311743904273" class="content">   我是一GG cupidonline@qq.com  热情大方开朗...哈哈 有点自恋 cupid 是丘比特的意思   
+					</div>
+				</div>
+				
+				<div id="ReContent2650280393843126394" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-02-09 13:42:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">63#</td>
+					</tr>
+				</table>
+					<div id="content2650280393843126394" class="content">   272914@163.com
+<div class="fs-newline"></div>年龄：23
+<div class="fs-newline"></div>性别：男   
+					</div>
+				</div>
+				
+				<div id="ReContent2650448663994602824" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-02-10 11:28:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">64#</td>
+					</tr>
+				</table>
+					<div id="content2650448663994602824" class="content">   lenvip@gamil.com 雷厉风行   
+					</div>
+				</div>
+				
+				<div id="ReContent2651564436230556415" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-02-16 11:48:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">65#</td>
+					</tr>
+				</table>
+					<div id="content2651564436230556415" class="content">   loveme_xy@126.com  也试试喽，广交天下朋友！本人男   
+					</div>
+				</div>
+				
+				<div id="ReContent2651584762694382387" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-02-16 14:26:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">66#</td>
+					</tr>
+				</table>
+					<div id="content2651584762694382387" class="content">   腾讯群：80332326喜欢计算机的朋友，欢迎您加入我们，自由聊天，自由讨论   
+					</div>
+				</div>
+				
+				<div id="ReContent2655549042412495915" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-03-09 23:13:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">67#</td>
+					</tr>
+				</table>
+					<div id="content2655549042412495915" class="content">   cumsbob#163.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2656742695869042918" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-03-16 09:37:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">68#</td>
+					</tr>
+				</table>
+					<div id="content2656742695869042918" class="content">   heling_112358@126.com
+<div class="fs-newline"></div> 
+					</div>
+				</div>
+				
+				<div id="ReContent2659167039898041764" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-03-29 11:12:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">69#</td>
+					</tr>
+				</table>
+					<div id="content2659167039898041764" class="content">   109dahaoren@163.com
+<div class="fs-newline"></div>留一个
+<div class="fs-newline"></div>求友   
+					</div>
+				</div>
+				
+				<div id="ReContent2662412839104033725" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/19253596"
+									class="tz_auto" target="_blank">kinghaiqing</a><span value="19253596" name="userid_19253596" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-04-15 23:03:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">70#</td>
+					</tr>
+				</table>
+					<div id="content2662412839104033725" class="content"> <i>深圳摄影师，男性，龙， 名字：Tommy
+<div class="fs-newline"></div> 
+<div class="fs-newline"></div>E-mail:   kinghaiqing@gmail.com
+<div class="fs-newline"></div> <div class="fs-newline"></div>祝大家好运！！！谢谢
+<div class="fs-newline"></div></i> 
+					</div>
+				</div>
+				
+				<div id="ReContent2665868288470037437" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/19253596"
+									class="tz_auto" target="_blank">kinghaiqing</a><span value="19253596" name="userid_19253596" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-05-04 14:00:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">71#</td>
+					</tr>
+				</table>
+					<div id="content2665868288470037437" class="content"> <font color="#0000FF">kinghaiqing@gmail.com</font> <div class="fs-newline"></div><font color="#0000FF">QQ: 372000181</font> <div class="fs-newline"></div><font color="#0000FF">a man,a photographers.</font> <div class="fs-newline"></div><font color="#0000FF">to find a girll</font> <div class="fs-newline"></div> 
+					</div>
+				</div>
+				
+				<div id="ReContent2666020190100122532" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-05-05 09:39:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">72#</td>
+					</tr>
+				</table>
+					<div id="content2666020190100122532" class="content">   jiangjianqiang24@163.com
+<div class="fs-newline"></div>male   
+					</div>
+				</div>
+				
+				<div id="ReContent2667171002899070856" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-05-11 14:31:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">73#</td>
+					</tr>
+				</table>
+					<div id="content2667171002899070856" class="content">   yezi810521@hotmail.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2668684873683741641" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-05-19 18:20:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">74#</td>
+					</tr>
+				</table>
+					<div id="content2668684873683741641" class="content">   交朋友fswkyo@163.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2669433246515386184" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-05-23 19:08:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">75#</td>
+					</tr>
+				</table>
+					<div id="content2669433246515386184" class="content">   都市网，网聚城市精英的力量！
+<div class="fs-newline"></div>都市网是一个真实的中国城市精英社交网络，是中国白领最具影响力的社区；联络你和你周围的朋友，拓展社交关系。加入都市网你可以：联络朋友，了解他们的最新动态；和朋友分享相片、音乐和电影；找到老同学，结识新朋友；用照片和日志记录生活,展示自我；同时你还可以跟朋友在一起玩好玩的小游戏，分享和收藏极具价值的互联网资讯，视频等等
+<div class="fs-newline"></div>网址是：http://www.cityne.net/   
+					</div>
+				</div>
+				
+				<div id="ReContent2670130809177048746" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-05-27 13:22:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">76#</td>
+					</tr>
+				</table>
+					<div id="content2670130809177048746" class="content">   ktery 说:
+<div class="fs-newline"></div>女 true188@gmail.com 20岁
+<div class="fs-newline"></div> <div class="fs-newline"></div>beaucloud@hotmail.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2673844470084009984" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-06-16 13:44:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">77#</td>
+					</tr>
+				</table>
+					<div id="content2673844470084009984" class="content">   hanrui0330@126.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2674377737518448640" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-06-19 10:43:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">78#</td>
+					</tr>
+				</table>
+					<div id="content2674377737518448640" class="content">   小弟邮箱jj-lyp@163.com交聊天朋友,非诚勿扰!!
+<div class="fs-newline"></div>18-Boy(年龄相近更好)   
+					</div>
+				</div>
+				
+				<div id="ReContent2675704354145786291" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-06-26 14:18:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">79#</td>
+					</tr>
+				</table>
+					<div id="content2675704354145786291" class="content">   buxinshou@gmail.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2676035917017251840" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-06-28 09:12:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">80#</td>
+					</tr>
+				</table>
+					<div id="content2676035917017251840" class="content">   hjlwfsd   
+					</div>
+				</div>
+				
+				<div id="ReContent2678577165414432768" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-07-12 01:54:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">81#</td>
+					</tr>
+				</table>
+					<div id="content2678577165414432768" class="content">   我过了 wenlinghao520@hotmail.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2678882415182610432" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-07-13 17:23:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">82#</td>
+					</tr>
+				</table>
+					<div id="content2678882415182610432" class="content">   shelly726@Gmail.com   聊天的朋友   
+					</div>
+				</div>
+				
+				<div id="ReContent2680411183021817856" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-07-21 23:08:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">83#</td>
+					</tr>
+				</table>
+					<div id="content2680411183021817856" class="content">   说:
+<div class="fs-newline"></div>zach8925@gmail.com
+<div class="fs-newline"></div> <div class="fs-newline"></div>814170056@pp.com
+<div class="fs-newline"></div> 
+					</div>
+				</div>
+				
+				<div id="ReContent2680411185169301504" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-07-21 23:08:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">84#</td>
+					</tr>
+				</table>
+					<div id="content2680411185169301504" class="content">   说:
+<div class="fs-newline"></div>zach8925@gmail.com
+<div class="fs-newline"></div> <div class="fs-newline"></div>814170056@pp.com
+<div class="fs-newline"></div> 
+					</div>
+				</div>
+				
+				<div id="ReContent2680530726994051072" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-07-22 14:36:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">85#</td>
+					</tr>
+				</table>
+					<div id="content2680530726994051072" class="content">   1064100209@qq.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2681258167752458240" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-07-26 12:42:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">86#</td>
+					</tr>
+				</table>
+					<div id="content2681258167752458240" class="content">   诚心交友，知己，伴侣
+<div class="fs-newline"></div>haosy2007@163.com
+<div class="fs-newline"></div>黑龙江 哈尔滨 男 30   
+					</div>
+				</div>
+				
+				<div id="ReContent2682466412919783424" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-08-02 00:59:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">87#</td>
+					</tr>
+				</table>
+					<div id="content2682466412919783424" class="content">   说:
+<div class="fs-newline"></div>enc.succeed@gmail.com
+<div class="fs-newline"></div>ni hao!!!
+<div class="fs-newline"></div> 
+					</div>
+				</div>
+				
+				<div id="ReContent2682502509988451793" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-08-02 05:39:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">88#</td>
+					</tr>
+				</table>
+					<div id="content2682502509988451793" class="content">   说:
+<div class="fs-newline"></div>enc.succeed@gmail.com
+<div class="fs-newline"></div> 
+					</div>
+				</div>
+				
+				<div id="ReContent2682594830294450176" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-08-02 17:36:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">89#</td>
+					</tr>
+				</table>
+					<div id="content2682594830294450176" class="content">   18676258@qq.com
+<div class="fs-newline"></div>]   
+					</div>
+				</div>
+				
+				<div id="ReContent2683563527972209486" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-08-07 22:54:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">90#</td>
+					</tr>
+				</table>
+					<div id="content2683563527972209486" class="content">   说:
+<div class="fs-newline"></div>zach8925@gmail.com
+<div class="fs-newline"></div> <div class="fs-newline"></div>szhappy09@126.com   男 成熟稳健   
+					</div>
+				</div>
+				
+				<div id="ReContent2683946102167699456" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-08-10 00:23:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">91#</td>
+					</tr>
+				</table>
+					<div id="content2683946102167699456" class="content">   yanghailin@yahunet.com
+<div class="fs-newline"></div>男，84年，IT职业，真诚交友一吐心事。   
+					</div>
+				</div>
+				
+				<div id="ReContent2688352049271144448" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-09-02 18:17:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">92#</td>
+					</tr>
+				</table>
+					<div id="content2688352049271144448" class="content">   chao
+<div class="fs-newline"></div> 
+					</div>
+				</div>
+				
+				<div id="ReContent2691768620593184768" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-09-21 04:14:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">93#</td>
+					</tr>
+				</table>
+					<div id="content2691768620593184768" class="content">   chilamho@foxmail.com
+<div class="fs-newline"></div> <div class="fs-newline"></div>男   
+					</div>
+				</div>
+				
+				<div id="ReContent2691768777359491072" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-09-21 04:15:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">94#</td>
+					</tr>
+				</table>
+					<div id="content2691768777359491072" class="content">   chilam.ho@foxmail.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2692834348008210432" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-09-26 22:05:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">95#</td>
+					</tr>
+				</table>
+					<div id="content2692834348008210432" class="content">   sola121@yahoo.com.tw
+<div class="fs-newline"></div> <div class="fs-newline"></div>歡迎來信^^   
+					</div>
+				</div>
+				
+				<div id="ReContent2693489152279707648" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-09-30 10:47:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">96#</td>
+					</tr>
+				</table>
+					<div id="content2693489152279707648" class="content">   zhangruyu8899@hotmail.com  <div class="fs-newline"></div>zhangruyu8899@yahoo.cn   
+					</div>
+				</div>
+				
+				<div id="ReContent2693909034725015552" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-10-02 17:05:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">97#</td>
+					</tr>
+				</table>
+					<div id="content2693909034725015552" class="content">   我一高中生，找人聊聊。解压。。397218586@QQ.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2694428017098227712" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-10-05 12:13:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">98#</td>
+					</tr>
+				</table>
+					<div id="content2694428017098227712" class="content">   li.jin.guang@hotmail.com   奇妙的人生。。   
+					</div>
+				</div>
+				
+				<div id="ReContent2694633692362145808" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/39043556"
+									class="tz_auto" target="_blank">来吧路人甲</a><span value="39043556" name="userid_39043556" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-10-06 14:49:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">99#</td>
+					</tr>
+				</table>
+					<div id="content2694633692362145808" class="content">   wangbing926@163.com   
+					</div>
+				</div>
+				
+				<div id="ReContent2694638775459384747" style="word-wrap: break-word;">
+				<table cellspacing=0 border=0 bgcolor="#F5F9FA" width=100%>
+					<tr>
+						<td width=206 valign="bottom" align=right></td>
+						<td width="500" align="center"><font size="-1" color="green">
+								<font color=green size=-1>作者：<a
+									href="http://my.tianya.cn/29027465"
+									class="tz_auto" target="_blank">zhou晓</a><span value="29027465" name="userid_29027465" style="float: none; display: inline;"></span>&nbsp;提交日期：2009-10-06 15:29:00&nbsp;</font>
+						</td>
+						 <td width=206 align=right style="padding-right:10px;">
+							
+						</td>
+						<td align="right">100#</td>
+					</tr>
+				</table>
+					<div id="content2694638775459384747" class="content"> <b>happyyeer@yahoo.cn/</b> <div class="fs-newline"></div><b></b> 
+					</div>
+				</div>
+				
+				
+				 <table bgcolor="#F5F9FA" width="100%">
+				 <tr style='font-size:14px'><td id="pageDivTop">
+							<div class="page_number">
+								共2页&nbsp; <span style='color:#0000FF'>1</span>  <a href="/tribe/showArticle.jsp?groupId=93803&articleId=255105449041749990113803&curPageNo=2" class='b1' >2</a>   <a href="/tribe/showArticle.jsp?groupId=93803&articleId=255105449041749990113803&curPageNo=2&h=n_1254814140000" >下一页</a> <a href="/tribe/showArticle.jsp?groupId=93803&articleId=255105449041749990113803&curPageNo=2">末页</a> [<a href="/tribe/showArticle.jsp?groupId=93803&articleId=255105449041749990113803&curPageNo=2#bottom" >回复此帖</a>] 
+							</div>
+						</td>
+						</tr>
+					</table> 
+				
+			
+		</form>
+		
+<script type="text/javascript">
+personalityMobileCertificate();
+jQuery("span.showtipfromwap").html('<a href="/tribe/showArticle.jsp?groupId=4&articleId=8833177e0e02d6e10b24aafda2849be5" target=_blank><FONT SIZE="2" COLOR="blue"><U>本帖来自掌中天涯-来吧 3g.tianya.cn/laiba</U></FONT></a>'); 
+
+</script>
+		<div class="clear"></div>
+		<br/>
+		<br/>
+		<div style="border:1px solid #c2d5e2;padding:10px ;"
+><script language="JavaScript" src="http://static.tianyaui.com/js/global/guidejs/ContentFooterjs_20090518.js" charset="gbk"></script></div>
+<br/>
+	<script type="text/javascript" src="http://static.tianyaui.com/js/2009/js/tianya_footer1.js" charset="gbk"></script>
+
+		</div>
+		</div>
+		</div>
+		</center>
+		<script type="text/javascript" src="http://static.tianyaui.com/js/global/music_tianya_cn_v1.js"></script>
+		<script charset="UTF-8" type="text/javascript" src="http://static.tianyaui.com/js/global/stat_20080313.js"></script>
+		
+		
+	</body>
+</html>

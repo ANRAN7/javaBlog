@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+/home/peace/workspace/javaThink/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3673885718.index
+406668823.index
+4001977326.index
+1688082225.index
+2871535595.index
+4143663563.index

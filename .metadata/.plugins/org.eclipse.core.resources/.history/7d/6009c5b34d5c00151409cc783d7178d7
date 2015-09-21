@@ -1,0 +1,27 @@
+package net.peace.reg;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class TestEmail {
+	public static void main(String[] args) {
+		//System.out.println(new TestFile("./01.htm"));
+	//List<String> ss=getEmail(new TestFile("./01.htm").toString());
+		List<String> ss=getEmail("...wwww@...y.com...");
+	for(String line:ss){
+		System.out.println(line);
+	}
+	}
+	
+	public static List<String> getEmail(String str) {
+		List<String> es = new ArrayList<String>();
+		Pattern p = Pattern.compile("^\\[a-z][\\w\\.-]*\\w+@[\\w\\.-]*\\w+\\.\\w{2,5}");//[
+		Matcher m = p.matcher(str);
+		while(m.find()) {
+			es.add(m.group());
+		}
+		return es;
+	}
+}
