@@ -1,2 +1,3 @@
 eclipse.preferences.version=1
-locationorg.eclipse.jst.server.tomcat.runtime.70=/home/peace/peace/javaee/apache-tomcat-7.0.64
+locationorg.eclipse.jst.server.tomcat.runtime.70=/home/peace/applications/javaee/apache-tomcat-7.0.64
+locationorg.eclipse.jst.server.tomcat.runtime.80=/home/peace/applications/javaee/apache-tomcat-8.0.26

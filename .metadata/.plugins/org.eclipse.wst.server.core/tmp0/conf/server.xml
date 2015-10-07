@@ -24,8 +24,6 @@
   -->
   <!--APR library loader. Documentation at /docs/apr.html -->
   <Listener SSLEngine="on" className="org.apache.catalina.core.AprLifecycleListener"/>
-  <!--Initialize Jasper prior to webapps are loaded. Documentation at /docs/jasper-howto.html -->
-  <Listener className="org.apache.catalina.core.JasperListener"/>
   <!-- Prevent memory leaks due to use of particular java/javax APIs-->
   <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener"/>
   <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener"/>
@@ -60,7 +58,7 @@
          Java HTTP Connector: /docs/config/http.html (blocking & non-blocking)
          Java AJP  Connector: /docs/config/ajp.html
          APR (HTTP/AJP) Connector: /docs/apr.html
-         Define a non-SSL HTTP/1.1 Connector on port 8080
+         Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
     -->
     <Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/>
     <!-- A "Connector" using the shared thread pool-->
@@ -70,13 +68,13 @@
                connectionTimeout="20000"
                redirectPort="8443" />
     -->
-    <!-- Define a SSL HTTP/1.1 Connector on port 8443
-         This connector uses the BIO implementation that requires the JSSE
+    <!-- Define a SSL/TLS HTTP/1.1 Connector on port 8443
+         This connector uses the NIO implementation that requires the JSSE
          style configuration. When using the APR/native implementation, the
          OpenSSL style configuration is required as described in the APR/native
          documentation -->
     <!--
-    <Connector port="8443" protocol="org.apache.coyote.http11.Http11Protocol"
+    <Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
                maxThreads="150" SSLEnabled="true" scheme="https" secure="true"
                clientAuth="false" sslProtocol="TLS" />
     -->
@@ -124,9 +122,9 @@
         <!-- Access log processes all example.
              Documentation at: /docs/config/valve.html
              Note: The pattern used is equivalent to using pattern="common" -->
-        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
+        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="/home/peace/workspace/javaThink/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/home/peace/workspace/javaThink/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/Helloworkd" path="/Helloworkd" reloadable="true" source="org.eclipse.jst.jee.server:Helloworkd"/></Host>
+      <Context docBase="/home/peace/workspace/javaThink/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/home/peace/workspace/javaThink/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/HttpProtocl" path="/HttpProtocl" reloadable="true" source="org.eclipse.jst.jee.server:HttpProtocl"/></Host>
     </Engine>
   </Service>
 </Server>
