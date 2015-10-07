@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<studentList> 
+  <student id="007" qq="123"> 
+    <name>peace</name>  
+    <sex>man</sex>  
+    <stnum>201421014960</stnum> 
+  </student>  
+  <student id="008" qq="374126165"> 
+    <name>蘅嵘</name>  
+    <sex>woman</sex>  
+    <stnum>201521014960</stnum> 
+  </student> 
+  <student>nick</student>
+</studentList>

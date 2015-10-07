@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;dom4j-1.6.1.jar&apos; to &apos;lib&apos;&#x0A;- Original project: &apos;day06&apos;&#x0A;- Destination element: &apos;lib&apos;&#x0A;- Original element: &apos;dom4j-1.6.1.jar&apos;" description="Copy file" element1="lib/dom4j-1.6.1.jar" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1443580282202" target="/xml/lib" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,43 @@
+package com.rlovep.dom4j;
+
+import java.util.Iterator;
+import java.util.List;
+
+import org.dom4j.Attribute;
+import org.dom4j.Element;
+import org.dom4j.Node;
+import org.dom4j.Text;
+
+/**
+ * 
+* @ClassName: ReadStu
+* @Description: 读取xml的完整内容
+* @author peace w_peace@163.com 
+* @date 30 Sep 2015 7:22:29 pm
+*
+ */
+public class ReadStu {
+	private void getChildNodes(Element elem,StringBuffer sb){
+		sb.append("<"+elem.getName());
+	    List<Attribute> attributes = elem.attributes();
+	    for(Attribute a:attributes){
+	    	if(a!=null){
+	    		sb.append(" "+a.getName()+"="+"\""+a.getValue()+"\"");
+	    	}
+	    }
+	    sb.append(">");
+	    Iterator<Node> nodeIterator = elem.nodeIterator();
+	    while(nodeIterator.hasNext()){
+	    	Node next = nodeIterator.next();
+	    	if(next instanceof Element){
+	    		getChildNodes((Element)next, sb);
+	    	}
+	    	if(next instanceof Text){
+	    		Text text=(Text)next;
+	    		sb.append(text.getText());
+	    	}
+	    }
+	    sb.append("</"+elem.getName()+">");
+	}
+
+}

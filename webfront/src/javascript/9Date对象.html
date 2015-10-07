@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+/*
+日期对象（Date）
+
+
+*/
+	var date = new Date(); //获取到当前的系统时间
+	document.write("年："+ date.getFullYear()+"<br/>");
+	document.write("月："+ (date.getMonth()+1)+"<br/>");
+	document.write("日："+ date.getDate()+"<br/>");
+	
+	document.write("时："+ date.getHours()+"<br/>");
+	document.write("分："+ date.getMinutes()+"<br/>");
+	document.write("秒："+ date.getSeconds()+"<br/>");
+	
+	//xxxx年yy月dd日  hh:mm:ss
+	
+	//document.write("当前时间是："+date.toLocaleString());
+	document.write("当前时间是："+date.getFullYear()+"年"+(date.getMonth()+1)+"月"+date.getDate()+"日 "+
+	date.getHours()+":"+date.getMinutes()+":"+date.getSeconds());
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<body>
+	
+
+</body>
+</html>

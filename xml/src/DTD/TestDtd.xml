@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE note [
+<!ELEMENT note (to,from+,heading*,body?,(br|b))>
+<!--带有子序列的元素，需要按照先后顺序出现；
+    to只能出现一次
+    from最少出现一次
+    heading次数随意
+    body出现零次或者一次
+    非出现br就出现b
+-->
+<!--元素约束-->
+<!ELEMENT to (#PCDATA)><!--pcdata元素-->
+<!ELEMENT from ANY><!--任何内容的元素-->
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+<!ELEMENT br EMPTY><!--空元素-->
+<!ELEMENT b EMPTY><!--空元素-->
+<!--属性约束-->
+<!ATTLIST to number CDATA #REQUIRED><!--必须有属性值出现，且属性值类型为字符串-->
+<!ATTLIST from length CDATA "10"><!--默认属性值，不写出属性时属性值为10-->
+<!--假如您不希望强制作者包含属性，并且您没有默认值选项的话，请使用关键词 #IMPLIED。-->
+<!ATTLIST heading length CDATA #IMPLIED>
+<!ATTLIST body length CDATA #FIXED "123"><!--属性拥有固定的值，并不允许作者改变这个值-->
+<!ATTLIST br type (check|cash) "cash"><!--属性值可以为check和cash中的一个-->
+]>
+<note>
+<to number="1234">Tove</to>
+<from>Jani</from>
+<heading length="10">Reminder</heading>
+<body length="123">Don't forget me this weekend</body>
+<br type="check"/>
+</note>

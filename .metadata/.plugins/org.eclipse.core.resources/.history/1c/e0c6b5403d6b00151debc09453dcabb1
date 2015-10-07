@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE note [
+<!ELEMENT note (to,from+,heading*,body?,(br|b))><!--带有子序列的元素，-->
+<!ELEMENT to (#PCDATA)><!--pcdata元素-->
+<!ELEMENT from ANY><!--任何内容的元素-->
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+<!ELEMENT br EMPTY><!--空元素-->
+<!ELEMENT b EMPTY><!--空元素-->
+]>
+<note>
+<to>Tove</to>
+<from>Jani</from>
+<heading>Reminder</heading>
+<body>Don't forget me this weekend</body>
+<br/>
+</note>

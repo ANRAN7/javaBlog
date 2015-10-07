@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+/*
+	with语句:有了 With 语句，在存取对象属性和调用方法时就不用重复指定对象。
+
+	
+	格式：
+		with(对象){
+			
+			
+				
+		}
+
+	
+
+*/
+
+	with(document){
+		for(var i = 0 ; i<5; i++){
+			
+			for(var j  =0 ; j<=i ; j++){
+				write("*&nbsp;");	
+			}	
+			write("<br/>");
+		}
+		write("<hr/>");
+	}
+
+
+	function Person(id , name){
+		this.id = id;
+		this.name = name;	
+	}
+	
+	//创建一个对象
+	var  p = new Person(110,"狗娃");
+	
+	
+	with(p){
+		document.write("编号："+ p.id);
+		document.write("姓名："+ name);
+	}
+	
+	
+
+
+
+
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+</body>
+</html>

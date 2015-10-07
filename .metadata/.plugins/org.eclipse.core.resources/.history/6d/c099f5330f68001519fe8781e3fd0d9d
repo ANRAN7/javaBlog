@@ -1,0 +1,7 @@
+package com.rlovep.sax;
+
+import org.xml.sax.helpers.DefaultHandler;
+
+public class MyHandler extends DefaultHandler {
+
+}

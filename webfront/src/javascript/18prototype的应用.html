@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+/*
+练习： 给字符串对象添加一个toCharArray的方法，然后再添加一个reverse(翻转)的 方法
+*/
+
+	//把 字符串转换成字符数组
+	String.prototype.toCharArray = function(){
+		var arr = new Array();
+		for(var index = 0; index<this.length ;index++){
+			arr[index] = this.charAt(index);	
+		}
+		return arr;
+	}
+	
+	
+	
+	String.prototype.reverse = function(){
+		//想把字符串转换成字符数组
+		var arr = this.toCharArray();
+		arr.reverse();
+		return arr.join("");
+	}
+	
+	var str = "你们厉害啊";
+	var charArr = str.toCharArray();
+	document.write("数组的元素："+charArr.join(","));
+
+	str = str.reverse();
+	document.write("<br/>翻转后的字符串："+str);
+	
+	
+
+
+
+
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+</body>
+</html>

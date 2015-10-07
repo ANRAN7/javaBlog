@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+/*
+Array数组对象:
+	创建数组的方式1：
+		var 变量名 = new Array();  创建一个长度为0的数组。
+	
+	方式2：
+		var 变量名= new Array(长度) 创建一个指定长度的数组对象。
+		
+	方式3：
+ 		var 变量名 = new Array("元素1","元素2"...);  给数组指定元素创建数组 的对象。
+		
+	方式4： 
+		var 变量名 = ["元素1","元素2"...];
+			
+
+数组要注意的细节：
+	1.  在javascript中数组的长度是可以发生变化的。
+			
+	
+*/
+
+
+	var arr = new Array(3); //创建了一个长度为0的数组对象。
+	arr[100] = 10;
+	document.write("arr长度："+arr.length+"<br/>");
+	
+	var arr2 = new Array("狗娃","狗剩","铁蛋");
+	arr2 = ["狗娃","狗剩","铁蛋","张三"];
+	document.write("arr2长度："+arr2.length+"<br/>");
+
+
+
+</script>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+/*
+地址栏对象(Location)
+
+	href : 设置以及获取地址栏的对象
+	reload() 刷新当前的页面
+	
+	
+
+*/
+	function showURL(){
+		alert(location.href);	
+	}
+	
+	
+	function download(){
+		location.href="http://www.baidu.com";
+	}
+	
+	
+	function rafresh(){
+		location.reload();	
+	}
+	
+	
+	window.setInterval("rafresh()",1000);
+	
+
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<body>
+	<input type="button" onclick="showURL()" value="显示地址栏"/>
+	<span onclick="download()">下载电影</span>
+</body>
+</html>

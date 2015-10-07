@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript"> 
+	
+	function showCity(){
+		//维护一个二维数组存储省份对应的城市
+		var citys = [[],["广州","佛山","湛江","中山"],["长沙","衡阳","岳阳","郴州"],["南宁","桂林","贵港","柳州"]];			
+	
+		//获取省份对应的节点
+		var provinceNode = document.getElementById("province");
+		//获取省份选中的选项
+		var selectIndex =  provinceNode.selectedIndex;
+		//获取对应的城市
+		var  cityDatas = citys[selectIndex];
+		
+		//找到city节点
+		var cityNode = document.getElementById("city");
+		
+		/*
+		//先清空city框所有option
+		var children = cityNode.childNodes;
+		for(var i = 0; i<children.length ; ){
+			cityNode.removeChild(children[i]);
+		}
+		*/
+		
+		//设置options的个数。
+		cityNode.options.length = 1 ;
+		
+		
+		
+		//遍历对应的所有城市然后创建对应的option添加到city上。
+		for(var index = 0; index<cityDatas.length ; index++){
+			var option = document.createElement("option");
+			option.innerHTML = cityDatas[index];
+			cityNode.appendChild(option);
+		}
+		
+		
+	
+	}
+	
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<body>
+	省份<select id="province" onchange="showCity()">
+    		<option>省份</option>
+    		<option>广东</option>
+            <option>湖南</option>
+            <option>广西</option>
+    	</select>
+	城市<select id="city"><option>城市</option></select>
+    
+</body>
+</html>

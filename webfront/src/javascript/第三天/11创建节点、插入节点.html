@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+/*
+ 创建字节入插入节点、设置节点的属性。
+ 
+ 	
+	document.createElement("标签名")		创建新元素节点
+	elt.setAttribute("属性名", "属性值")	设置属性
+	elt.appendChild(e)						添加元素到elt中最后的位置
+	
+	
+	
+	
+*/
+
+	var num  = 1;
+	function add(){
+		var inputNode = document.createElement("input"); //创建一个指定标签名字的节点。
+		
+		//setAttribute:设置节点的属性
+		inputNode.setAttribute("type","button");
+		inputNode.setAttribute("value","按钮"+num);
+		num++;
+		
+		var bodyNode = document.getElementsByTagName("body")[0];
+		bodyNode.appendChild(inputNode); //appendChild 添加子节点。
+				
+	}
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<body>
+	<input type="button" onclick="add()" value="添加"/>
+</body>
+</html>

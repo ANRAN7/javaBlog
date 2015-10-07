@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+	
+	
+	//产生一个四位的验证码。
+	function createCode(){
+		var datas = ['A','B','何','敏','凡','江','1','9']; // 0-7  长度8
+		var code = "";
+		for(var i = 0 ; i<4; i++){
+			//随机产生四个索引值
+			var index =  Math.floor(Math.random()*datas.length); // random 0.0-1.0（不包括1.0）
+			code+=datas[index];
+		}	
+		
+		var spanNode = document.getElementById("code");
+		spanNode.innerHTML = code;
+		spanNode.style.fontSize ="24px";
+		spanNode.style.color = "red";
+		spanNode.style.backgroundColor="gray";
+		spanNode.style.textDecoration = "line-through";
+	}
+	
+function ready(){
+	createCode();
+}
+	
+
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<body onload="ready()">
+	<span id="code"></span><a href="#" onclick="createCode()">看不清，换一个</a>
+	
+</body>
+</html>

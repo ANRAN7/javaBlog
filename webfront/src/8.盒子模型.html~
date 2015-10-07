@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style type="text/css">
+
+/*
+	盒子模型: 盒子模型就是把一个html边框比作成了一个盒子的边框，盒子模型要做用于操作数据与边框之间的距离或者 是边框与边框之间的距离。
+	
+	
+	盒子模型主要是用于操作内边距(padding)与外边距（margin）
+	
+*/	
+	div{
+		border-style:solid;
+		width:100px;
+		height:100px;
+		/* 内边距 */
+		padding-left:10px;
+		padding-top:20px;		
+	}
+	
+	.one{
+		margin-bottom:30px;
+	}
+
+
+	.two{
+		margin-left:700px;
+	}
+
+
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<body>
+	<div class="one">
+    	这个是一个div
+    </div>
+    
+    <div class="two">
+    	这个是二个div
+    </div>
+</body>
+</html>

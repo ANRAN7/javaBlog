@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+/*
+常用的事件：
+
+	鼠标点击相关：
+		onclick 在用户用鼠标左键单击对象时触发。 
+		ondblclick 当用户双击对象时触发。 
+		onmousedown 当用户用任何鼠标按钮单击对象时触发。 
+		onmouseup 当用户在鼠标位于对象之上时释放鼠标按钮时触发。 
+
+	鼠标移动相关：
+		onmouseout  当用户将鼠标指针移出对象边界时触发。 
+		onmousemove 当用户将鼠标划过对象时触发。 
+
+	焦点相关的：
+		onblur 在对象失去输入焦点时触发。 
+		onfocus 当对象获得焦点时触发。
+
+	其他：
+		onchange 当对象或选中区的内容改变时触发。 
+		onload 在浏览器完成对象的装载后立即触发。 
+		onsubmit 当表单将要被提交时触发。 
+*/
+	
+	function clickTest(){
+		alert("单击..");	
+	}
+	
+	function dbClick(){
+		alert("双击.."); 	
+	}
+	
+
+
+	function showTime(){
+		var timeSpan = document.getElementById("timeSpan");
+		var date  = new Date().toLocaleString();
+		timeSpan.innerHTML = date.fontcolor("red");
+	}
+	
+	function hideTime(){
+		var timeSpan = document.getElementById("timeSpan");
+		timeSpan.innerHTML = "";
+	}
+
+
+	function showInfo(){
+		var timeSpan = document.getElementById("userName");
+		timeSpan.innerHTML = "用户名是由6位的英文与数字组成".fontcolor("green");	
+	}
+
+	function hideInfo(){
+		var timeSpan = document.getElementById("userName");
+		timeSpan.innerHTML = "";	
+	}
+ 
+	function change(){
+		alert("城市改变了..");	
+	}
+
+
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<body>
+	<input type="button" onclick="clickTest()"  value="单击" />
+    <input type="button" ondblclick="dbClick()" value="双击"/> 
+	<span onmousemove="showTime()" onmouseout="hideTime()" >查看当前系统时间：</span><span id="timeSpan"></span>
+	用户名<input type="text" onfocus="showInfo()"  onblur="hideInfo()"  /> <span id="userName"></span>
+
+	<select onchange="change()" >
+    	<option>广州</option>
+        <option>深圳</option>
+        <option>上海</option>
+    </select>
+
+
+</body>
+</html>

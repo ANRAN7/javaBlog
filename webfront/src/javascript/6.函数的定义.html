@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+/*
+函数:
+
+
+函数的定义格式：
+	
+	function 函数名(形参列表){
+		函数体 ;	
+	}
+
+javascript的函数要注意的细节：
+	1. 在 javascript中函数 定义形参时是不能使用var关键字声明变量 的。
+	2. 在javascript中 的函数是没有 返回值类型 的，如果函数需要返回数据给调用者，直接返回即可，如果不需要返回则不返回。
+	3. 在 javascript中是没有函数 重载 的概念 的，后定义的同名函数会直接覆盖前面定义同名函数。
+	4. 在javascript中任何的函数内部都隐式的维护了一个arguments（数组）的对象，给函数 传递数据的时候，是会先传递到arguments对象中，
+	然后再由arguments对象分配数据给形参的。
+	
+
+
+需求：定义一个函数做两个参数的加法功能。
+*/
+	function  add(a,b){
+		var sum = a+b;
+		document.write("两个参数的总和："+ sum);	
+		//return sum;
+	}
+		
+	function add(){
+		document.write("长度："+arguments.length+"<br/>");
+		for(var index = 0 ; index<arguments.length ; index++){
+			document.write(arguments[index]+",");	
+		}
+		
+		//var sum  = a+b+c;	
+		//var sum = 0;
+		//document.write("三个参数的总和："+ sum);
+	}
+		
+	
+	
+	//调用函数
+	add(11,21,13,14);
+	
+	
+
+
+</script>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+</body>
+</html>

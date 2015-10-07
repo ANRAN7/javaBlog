@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+/*
+javascript组成部分：
+	EMCAScript（基本语法）
+	BOM( Browser Object MOdel) 浏览器对象模型.
+浏览器对象模型中把浏览器 的各个部分都是用了一个对象进行描述，如果我们要
+操作浏览器的一些属性，我就可以通过浏览器对象模型 的对象进行操作。
+	
+	window  代表了一个新开的窗口
+	location 代表了地址栏对象。
+	screen  代表了整个屏幕的对象
+
+window对象常用的方法：
+	
+	open()   打开一个新的窗口。
+	resizeTo() 将窗口的大小更改为指定的宽度和高度值。
+	moveBy()  相对于原来的窗口移动指定的x、y值。 
+	moveTo() 将窗口左上角的屏幕位置移动到指定的 x 和 y 位置。 
+	
+	setInterval() 每经过指定毫秒值后就会执行指定的代码。
+	clearInterval() 根据一个任务的ID取消的定时任务。
+	setTimeout() 经过指定毫秒值后执行指定 的代码一次。
+	
+注意： 使用window对象的任何属性与方法都可以省略window对象不写的。
+   
+	
+*/
+
+	function showAd(){
+			open("ad.html","_blank","height=400px,width=400px,toolbar=no,location=no,top=200px");		
+	}
+	
+	setTimeout("showAd()",2000);
+	
+	//var id = window.setInterval("showAd()",2000);
+	
+	
+	function small(){
+		resizeTo(300,200); //相对于原本窗口改变指定的大小。	
+	}
+	
+	
+	function move(){
+		for(var i = 0 ; i<100 ; i++){
+			window.moveBy(50,0); // 相对于原来的窗口移动指定的x、y值。	
+			moveBy(0,50);
+			window.moveBy(-50,0);
+			window.moveBy(0,-50);
+		}
+	}
+	
+	function move2(){
+		window.moveTo(500,200);	
+	}
+	
+	
+	
+	/*
+	function clearTest(){
+		window.clearInterval(id);	
+	}
+	*/
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<body>
+	<input type="button" onclick="showAd()" value="下载电影"/>
+    <input type="button" onclick="small()" value="变小"/>
+    <input type="button" onclick="move()" value="moveBy"/>
+     <input type="button" onclick="move2()" value="moveTo"/>
+      <input type="button" onclick="clearTest()" value="取消定时任务"/>
+ 	
+</body>
+</html>

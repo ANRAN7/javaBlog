@@ -1,0 +1,71 @@
+package com.rlovep.xpath;
+
+import java.util.List;
+
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.Node;
+import org.dom4j.io.SAXReader;
+
+/**
+ * 
+* @ClassName: TestXpath
+* @Description: xpath语法入门；
+* @author peace w_peace@163.com 
+* @date 1 Oct 2015 1:58:30 pm
+*
+ */
+public class TestXpath {
+	private static int count=0;
+	public static void main(String[] args) throws Exception {
+		Document doc = new SAXReader().read("./src/student.xml");
+		String xpath="";
+		/*
+		 * 1.学习 /   绝对路径，一个 /表示一层 与文件系统类似
+		 */
+		//从doc中选出根标签
+		xpath="/studentList";
+		System.out.println("根标签>>"+doc.selectSingleNode(xpath).getName());
+		//从doc中选出所有的student标签
+		xpath="/studentList/student";
+		List<Node> nodes = doc.selectNodes(xpath);
+		count=1;
+		for(Node i:nodes){
+			
+			System.out.println("student>>>"+(count++)+":"+i.getName());
+		}
+		/*
+		 * 2。学习 //   表示不分层次结构选择元素，只要符合要求都选出
+		 */
+		//从doc中选出所有的name标签
+		xpath="//name";
+		nodes = doc.selectNodes(xpath);
+		count=1;
+		for(Node i:nodes){
+			
+			System.out.println("student>>>"+(count++)+":"+i.getName());
+			}
+		
+		/*
+		 * 3.学习 * 通配符  表示匹配所有元素
+		 */
+		//将根节点下的所有孩子节点选出来 不包括孙标签
+		xpath="/studentList/*";
+		nodes = doc.selectNodes(xpath);
+		count=1;
+		for(Node i:nodes){
+			
+			System.out.println("student>>>"+(count++)+":"+i.getName());
+			}
+		//将根标签下的所有标签选出：//* 表示选出所有不分层次结构
+		xpath="/studentList//*";
+		nodes = doc.selectNodes(xpath);
+		count=1;
+		for(Node i:nodes){
+			
+			System.out.println("student>>>"+(count++)+":"+i.getName());
+			}
+		
+	}
+
+}

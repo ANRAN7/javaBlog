@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+/*
+需求：想把getMax与searchEle方法添加 到数组对象中。
+
+	functoin Array(){
+		this.prototype = new Object();	
+		
+		this.getMax = function(){
+		
+		}
+	}	
+Prototype注意的细节：
+	1.	prototype是函数(function)的一个必备属性(书面一点的说法是"保留属性")(只要是function,就一定有一个prototype属性)
+	2.	prototype的值是一个对象
+	3.	可以任意修改函数的prototype属性的值。
+	4.	一个对象会自动拥有prototype的所有成员属性和方法。
+	
+
+
+	
+*/
+	
+	Array.prototype.getMax = function(){
+		var max = this[0];
+		for(var index = 1; index<this.length ; index++){
+			if(this[index]>max){
+				max = this[index];	
+			}	
+		}
+		return max;
+	}
+	
+	
+	Array.prototype.searchEle = function(target){
+		for(var i = 0 ; i<this.length ; i++){
+			if(target==this[i]){
+				return i;	
+			}	
+		}
+		return -1;
+			
+	}
+	
+
+
+	//var arr = new Array(12,4,17,9);
+	var arr = [12,4,17,9];
+	var max = arr.getMax();
+	var index = arr.searchEle(9);
+	document.write("最大值："+ max+"<br/>");
+	document.write("索引值："+ index+"<br/>");
+
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+</body>
+</html>

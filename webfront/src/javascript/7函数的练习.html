@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script>
+
+	function showDay(){
+		//找到对应 的标签对象。
+		var inputObj = document.getElementById("month");
+		//获取input标签数据
+		var month = inputObj.value;
+		/*
+		if(month==1||month==3||month==5||month==7||month==8||month==10||month==12){
+			alert("本月是31天");	
+		}else if(month==4||month==6||month==9||month==11){
+			alert("本月是30天");	
+		}else if(month==2){
+			alert("本月是28天");	
+		}else{
+			alert("没有该月份");	
+		}
+		*/
+		
+		month = parseInt(month);
+		switch(month){
+			case 1:
+			case 3:
+			case 5:
+			case 7:
+			case 8:
+			case 10:
+			case 12:
+				alert("本月是31天");
+				break;
+			case 4:
+			case 6:
+			case 9:
+			case 11:
+				alert("本月是30天");
+				break;
+			case 2:
+				alert("本月是28天");
+				break;
+			default:
+				alert("没有该月份");
+				break;
+		
+		}
+		
+		
+	}
+
+
+</script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<body>
+	月份:<input id="month" type="text" /><input type="button" value="查询" onclick="showDay()" />
+
+</body>
+</html>
