@@ -3,12 +3,12 @@
 	<section name="ShowViewDialog">
 		<item value="380" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="org.eclipse.pde.ui.PluginsView" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
+		<item value="org.eclipse.mat.ui.views.SnapshotHistoryView" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
 		<item value="444" key="DIALOG_HEIGHT"/>
-		<item value="316" key="DIALOG_X_ORIGIN"/>
-		<item value="232" key="DIALOG_Y_ORIGIN"/>
+		<item value="559" key="DIALOG_X_ORIGIN"/>
+		<item value="225" key="DIALOG_Y_ORIGIN"/>
 		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="Plug-in Development"/>
+			<item value="Memory Analyzer Views"/>
 		</list>
 	</section>
 </section>

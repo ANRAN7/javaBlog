@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%--out对象：对应jspwriter
+ --%>
+<%
+  for(int i=0;i<=1024;i++){
+	  out.write("a");
+	 
+  }
+System.out.println("当前缓存区大小："+out.getBufferSize());
+System.out.println("剩余缓存区大小："+out.getRemaining());
+//如果不刷新则，123先输出；
+//out.flush();
+response.getWriter().write("123");
+%>
+<%--
+application对象：对应servlet中的context对象
+存储的属性，是整个应用共享的；同样可以获得配置参数；
+ --%>
+<%
+//存储属性
+application.setAttribute("name", "peace");
+%>
+<%=application.getInitParameter("keys") %>
+<%--
+config对象：对应servlet中的config对象
+用处不是很大
+ --%>
+ <%=config.getServletName() %>
+</body>
+</html>

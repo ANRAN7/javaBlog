@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;adv.html&apos; to &apos;WebContent&apos;&#x0A;- Original project: &apos;day09&apos;&#x0A;- Destination element: &apos;WebContent&apos;&#x0A;- Original element: &apos;adv.html&apos;" description="Copy file" element1="WebRoot/adv.html" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1444467900468" target="/HttpSer/WebContent" units="0" version="1.0"/>
+</session>

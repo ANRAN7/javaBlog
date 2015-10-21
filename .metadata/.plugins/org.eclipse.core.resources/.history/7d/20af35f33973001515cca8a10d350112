@@ -1,0 +1,115 @@
+package com.rlovep.server;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.net.SocketException;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.sound.midi.Receiver;
+
+public class TalkServer {
+	//保存聊天线程：
+	private Map<String, ServerThread> map = new HashMap<>();
+	
+	public static void main(String[] args) {
+		
+	}
+	public void start(){
+		//服务器servesocket
+		ServerSocket serverSocket=null;
+		//服务器socket
+		Socket socket=null;
+		try {		
+			serverSocket=new ServerSocket(8888);
+			while(true){
+			socket=serverSocket.accept();
+			ServerThread st=new ServerThread(socket);
+			new Thread(st).start();
+			}
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		finally{
+			try {
+				if(serverSocket!=null){
+					serverSocket.close();
+				}
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+	private class ServerThread implements Runnable{
+		private Socket socket=null;
+		private BufferedReader in=null;
+		private PrintWriter out=null;
+		private  String name=null;
+		private String meshead=null;
+		private boolean flag=true;
+		public ServerThread(Socket socket) throws IOException {
+			this.socket=socket;
+			out=new PrintWriter(socket.getOutputStream());
+			in=new BufferedReader(new InputStreamReader(socket.getInputStream()));
+			name=in.readLine();
+			meshead=name+"["+socket.getInetAddress().getHostAddress()+":"+socket.getPort()+"]";
+			map.put(name, this);
+			send(meshead+"上线了");
+		}
+		public void send(String msg){
+			for(ServerThread thread:map.values()){
+				thread.out.println(msg);
+			}
+		}
+		public void Receiver() throws IOException{
+			String str=null;
+			while((str=in.readLine())!=null){
+				if("quit".equalsIgnoreCase(str)){
+					stop();
+					out.println("disconnect");
+					break;
+				}
+				send(meshead+str);
+			}
+		}
+		public void stop(){
+			flag=false;
+			map.remove(name);
+			send(meshead+"已经下线了");
+		}
+		@Override
+		public void run() {
+		
+			try {
+				while(flag){
+					Receiver();
+				}
+			}
+			catch(SocketException e){
+				stop();//客户端直接关闭引发的错误；
+			}
+			catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			finally{
+				try {
+					if(socket!=null){
+						socket.close();
+					}
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+		
+	}
+}

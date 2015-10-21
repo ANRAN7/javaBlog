@@ -1,0 +1,18 @@
+package com.rlovep.oom;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TestHeapOom {
+
+	static class OOmObject{
+		
+	}
+	public static void main(String[] args) {
+		List<OOmObject> list=new ArrayList<>();
+		while(true)
+		{
+			list.add(new OOmObject());
+		}
+	}
+}

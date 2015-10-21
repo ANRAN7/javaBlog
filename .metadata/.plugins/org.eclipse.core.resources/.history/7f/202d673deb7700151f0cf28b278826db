@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%--导入核心标签库 --%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>    
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>核心标签jiangjie</title>
+</head>
+<body>
+<%--使用标签库 --%>
+<%--set标签：保存数据到域中，默认保存到pag域中
+    var:属性名
+    value：属性价值，可以是对象
+    scope:范围
+ --%>
+<c:set var="name" value="rose" scope="page"></c:set>
+<%--out标签： 类似输出表达式：<%= %>
+    value:显示的内容；
+    default：value为空时显示的内容
+    escapexml：是否对<等实体符号转义；
+--%>
+<%--el表达式输出，调用属性 --%>
+<c:out value="${name }" default="<h3>标题3</h3>" escapeXml="true"></c:out>
+<%--默认值测试，以及输出特殊字符 --%>
+<c:out value="${peace }" default="<h3>标题</h3>" escapeXml="true"></c:out>
+<hr/>
+<%--remove标签：删除数据，默认删除到pag域中
+    var:属性名
+    scope：范围
+ --%>
+<c:remove var="name" scope="page"/>
+<c:out value="${name }" default="删除name之后" escapeXml="true"></c:out>
+<%--catch标签：可以用来取得发生错误时的信息，同时可以进行适当处理
+    var:保存错误信息的exception
+ --%>
+ <c:catch var="e">
+ <%
+   int a=0,b=10;
+ 	b=b/a;
+ %>
+ </c:catch>
+ <c:out value="${e }"
+
+</body>
+</html>

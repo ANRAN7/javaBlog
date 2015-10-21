@@ -4,4 +4,4 @@ ENABLED_DECORATORS=org.eclipse.m2e.core.mavenVersionDecorator\:false,org.eclipse
 PLUGINS_NOT_ACTIVATED_ON_STARTUP=org.eclipse.equinox.p2.ui.sdk.scheduler;org.eclipse.m2e.discovery;org.eclipse.mylyn.tasks.ui;org.eclipse.mylyn.team.ui;
 UIActivities.org.eclipse.plugInDevelopment=true
 eclipse.preferences.version=1
-org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\n<org.eclipse.ui.commands/>
+org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\n<org.eclipse.ui.commands>\n<keyBinding contextId\="org.eclipse.ui.contexts.dialogAndWindow" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="CTRL+SHIFT+Z"/>\n<keyBinding contextId\="org.eclipse.ui.contexts.dialogAndWindow" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="CTRL+SHIFT+Z"/>\n<keyBinding commandId\="org.eclipse.ui.edit.redo" contextId\="org.eclipse.ui.contexts.dialogAndWindow" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="CTRL+Y"/>\n</org.eclipse.ui.commands>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+    version="2.1">
+    <description>A tag library exercising SimpleTag handlers.</description>
+    <!-- 标签库的版本 -->
+    <tlib-version>1.0</tlib-version>
+    <!-- 标签库前缀 -->
+    <short-name>rlovep</short-name>
+     <!-- tld文件的唯一标记 -->
+   <uri>http://rlovep.com</uri>
+   <!-- 定义第一个方法 -->
+   <function>
+   <!-- 定义方法名 -->
+   	<name>reverse</name>
+   	<!-- 定义方法的处理类 -->
+   	<function-class>com.rlovep.elmethod.MyFuns</function-class>
+   	<!-- 定义函数的实现方法：包括返回值和函数名以及参数 -->
+   	<function-signature>java.lang.String reverse(java.lang.String)</function-signature>
+   </function>
+    <!-- 定义第二个方法 -->
+   <function>
+   <!-- 定义方法名 -->
+   	<name>count</name>
+   	<!-- 定义方法的处理类 -->
+   	<function-class>com.rlovep.elmethod.M</function-class>
+   	<!-- 定义函数的实现方法：包括返回值和函数名以及参数 -->
+   	<function-signature>java.lang.String reverse(java.lang.String)</function-signature>
+   </function>
+</taglib>

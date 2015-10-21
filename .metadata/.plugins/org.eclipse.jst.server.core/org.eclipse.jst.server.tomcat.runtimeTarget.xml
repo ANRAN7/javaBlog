@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<classpath>
+  <source-attachment entry="/home/peace/applications/javaee/apache-tomcat-7.0.64/lib/servlet-api.jar" runtime-id="Apache Tomcat v7.0" source-attachment-path="/HttpSer/WebContent/WEB-INF/lib"/>
+</classpath>

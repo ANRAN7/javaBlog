@@ -1,0 +1,8 @@
+contextsDir=/home/peace/applications/javaee/apache-tomcat-7.0.64/conf/Catalina/localhost
+eclipse.preferences.version=1
+managerUrl=http\://localhost\:8080/manager
+projectsInSourcePath=Day1;HttpProtocl;Lesson27;day07;day09;webfront;xml;
+tomcatConfigFile=/home/peace/applications/javaee/apache-tomcat-7.0.64/conf/server.xml
+tomcatDir=/home/peace/applications/javaee/apache-tomcat-7.0.64
+tomcatJRE=1443516058806
+tomcatVersion=tomcatV7

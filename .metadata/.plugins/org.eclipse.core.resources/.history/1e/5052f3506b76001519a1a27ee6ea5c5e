@@ -1,0 +1,45 @@
+package com.rlovep.contact.servlet;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class ListContact
+ */
+@WebServlet("/ListContact")
+public class ListContact extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+  
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+      String html=null;
+      html+=<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+            <html xmlns="http://www.w3.org/1999/xhtml">
+            <head>
+           <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+           <title>查询所有联系人</title>
+	      <style type="text/css">
+	      	table td{
+	      		/*文字居中*/
+	      		text-align:center;
+	      	}
+	      	
+	      	/*合并表格的边框*/
+	      	table{
+	      		border-collapse:collapse;
+	      	}
+	      </style>
+	      </head>
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.rlovep.elmethod;
+
+public class MyFuns {
+	public static String reverse(String str)
+	{
+		return new StringBuffer(str).reverse().toString();
+	}
+	public static int count(String str)
+	{
+		return str.length();
+	}
+}

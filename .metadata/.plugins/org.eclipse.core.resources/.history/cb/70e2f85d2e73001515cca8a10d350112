@@ -1,0 +1,83 @@
+package com.rlovep.clinet;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import java.net.Socket;
+
+public class TalkClinet {
+	//获得控制台输入
+	private  BufferedReader sysin=null;
+	//socket
+	private Socket s=null;
+	private BufferedReader in=null;
+	private PrintWriter out=null;
+	//线程停止flag
+	private boolean flag=true;
+	public static void main(String[] args) {
+	
+	}
+ public void  start(){
+	 try {
+		sysin=new BufferedReader(new InputStreamReader(System.in,"utf-8"));
+		System.out.println("请输入用户名：");
+		String name=sysin.readLine();
+		//建立客户端socket
+		s=new Socket("127.0.0.1", 8888);
+		//获得socket输出out
+		out=new PrintWriter(s.getOutputStream(),true);
+		out.println("name");
+		//获得socket输入 in
+		in=new BufferedReader(new InputStreamReader(s.getInputStream()));
+		
+		
+	 } catch (UnsupportedEncodingException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+	 finally{
+		 if(sysin!=null){
+			 try {
+				sysin.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		 }
+	 }
+  }
+ private class ClinetThread implements Runnable{
+	
+	 private void recive(){
+		try {
+			String str=in.readLine();
+			if(str=="disconnect"){
+				stop();
+				System.out.println("回车退出");
+			}
+			System.out.println(str);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	 }
+	 public void  stop()
+	 {
+		 flag=false;
+	 }
+	@Override
+	public void run() {
+		while(flag){
+			recive();
+		}
+	} 
+	 
+ }
+}
