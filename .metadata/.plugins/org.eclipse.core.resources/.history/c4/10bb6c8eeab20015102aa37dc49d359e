@@ -1,0 +1,40 @@
+package com.rlovep.ognl;
+
+import com.opensymphony.xwork2.ActionContext;
+import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.util.ValueStack;
+
+public class OgnlAction extends ActionSupport{
+	private User user = new User(29, "peace");
+    private String text="peace";
+	public String getText() {
+		return text;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	@Override
+	public String execute() throws Exception {
+		 ActionContext ac=ActionContext.getContext();
+		// 映射数据
+		ac.getContextMap().put("request_data", "request_data");
+		ac.getSession().put("session_data", "Session_data");
+		ac.getApplication().put("application_data", "Application_data");
+		//值栈对象存储
+		ValueStack valueStack = ac.getValueStack();
+		//操作根元素
+		valueStack.push(new User(23,"peace2"));
+		
+		return SUCCESS;
+	}
+}

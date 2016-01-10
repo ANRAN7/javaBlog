@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Tomcat 7.0</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>classes</name>
+			<type>2</type>
+			<location>/home/peace/applications/javaee/src/apache-tomcat-7.0.65-src/output/classes</location>
+		</link>
+		<link>
+			<name>java</name>
+			<type>2</type>
+			<location>/home/peace/applications/javaee/src/apache-tomcat-7.0.65-src/java</location>
+		</link>
+	</linkedResources>
+</projectDescription>

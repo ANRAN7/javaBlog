@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+   <package name="inter" extends="struts-default">
+      <!-- 拦截器的配置 -->
+      <interceptors>
+          <!-- 配置用户自定义拦截器 -->
+          <interceptor name="helloInterceptor" class="com.rlovep.inerceptor.HelloInreceptor"></interceptor>
+          <!-- 自定义拦截器栈 要引用默认的拦截器栈-->
+          <interceptor-stack name="helloStack">
+             <interceptor-ref name="defaultStack"></interceptor-ref> 
+             <interceptor-ref name="helloInterceptor"></interceptor-ref>
+          </interceptor-stack>
+      </interceptors>
+   
+       <!-- 定义默认执行拦截器 -->
+       <default-interceptor-ref name="helloStack"></default-interceptor-ref>
+       <!-- 定义action， 调用刚调用的拦截器 -->
+       <action name="inter" class="com.rlovep.inerceptor.InterAction">
+        <result name="success">/success.jsp</result>
+       </action>
+   </package>
+
+
+</struts>

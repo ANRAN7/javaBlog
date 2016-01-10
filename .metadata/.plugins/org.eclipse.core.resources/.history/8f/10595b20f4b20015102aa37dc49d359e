@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+<!-- 通过常量加载资源文件 -->
+	<constant name="struts.custom.i18n.resources" value="com.rlovep.I18n.msg"></constant>
+<!-- 总配置文件中引入其他所有的配置文件 -->
+  <include file="com/rlovep/action/login.xml"></include>
+  <include file="com/rlovep/requsets/reqs.xml"></include>
+  <include file="com/rlovep/type/type.xml"></include>
+  <include file="com/rlovep/file/file1.xml"></include>
+  <include file="com/rlovep/inerceptor/inter.xml"></include>
+  <include file="com/rlovep/inerceptor/demo/action/userinter.xml"></include>
+  <include file="com/rlovep/ognl/ognl.xml"></include>
+<!-- 配置一个package 必须继承struts-default-->
+<package name="struts2" extends="struts-default">
+	<!-- 配置action，名字hello是访问url使用的：hello.action-->
+      <action name="hello" class="com.rlovep.hello.HelloAction">
+         <!-- 如果为success就跳转到success.jsp -->
+         <result name="success">/success.jsp</result>
+      </action>
+      
+</package>
+
+</struts>

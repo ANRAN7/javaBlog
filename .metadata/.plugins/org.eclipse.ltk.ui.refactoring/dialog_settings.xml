@@ -13,4 +13,8 @@
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		<item value="488" key="DIALOG_HEIGHT"/>
 	</section>
+	<section name="ExtractTempWizard">
+		<item value="true" key="replaceOccurrences"/>
+		<item value="false" key="declareFinal"/>
+	</section>
 </section>

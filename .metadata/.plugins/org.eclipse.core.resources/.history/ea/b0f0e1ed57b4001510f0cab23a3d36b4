@@ -1,0 +1,14 @@
+package com.rlovep.hello;
+
+import java.util.Date;
+
+public class Hello {
+	public static void main(String[] args) {
+      //创建对象
+	  Employee emp=new Employee();
+      emp.setEmpName("peace");;
+      emp.setWorkDate(new Date());
+      //获取加载配置文件的管理类对象
+      
+	}
+}

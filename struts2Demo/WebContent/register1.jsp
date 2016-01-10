@@ -1,0 +1,47 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@taglib uri="/struts-tags" prefix="s" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>validation</title>
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">   
+	<!-- 修改，不让ul换行，更友好的显示错误信息 -->
+	<style type="text/css">
+	ul{
+		display: inline;
+	}
+	ul li{
+		display: inline;
+		color: red;
+	}
+	</style>
+	 
+  </head>
+  
+  <body>
+
+  	
+  	
+  	<br/>
+  	<s:fielderror></s:fielderror>
+  	 <form method="post" action="${pageContext.request.contextPath }/valid_register.action">
+  	 <!-- 防止表单重复提交，第一步：生成id(客户端、服务器) -->
+  		<s:token></s:token>
+  	 	用户名：<input type="text" name="user.userName">
+  	 	 		<s:fielderror fieldName="user.userName"></s:fielderror>
+  	 	<br/>
+  	 	密码：<input type="text" name="user.pwd">
+  	 			<s:fielderror fieldName="user.pwd"></s:fielderror>
+  	 	   <br/>
+  	 	邮箱：<input type="text" name="user.email">
+  	 	      <s:fielderror fieldName="user.email"></s:fielderror>
+  	 	   <br/>
+  	 	生日：<input type="text" name="user.birth">
+  	 	<s:fielderror fieldName="user.birth"></s:fielderror>
+  	 	    <br/>
+  	 	<input type="submit" value="注册"><br/>
+  	 </form>
+  </body>
+</html>

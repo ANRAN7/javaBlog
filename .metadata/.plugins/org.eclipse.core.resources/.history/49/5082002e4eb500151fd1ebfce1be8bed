@@ -1,0 +1,88 @@
+package com.rlovep.one2many;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
+import org.hibernate.service.ServiceRegistryBuilder;
+import org.junit.Test;
+
+public class App {
+	private static SessionFactory sf=null;
+	static{
+		Configuration config=new Configuration().configure().addClass(Dept.class).addClass(Employee.class);
+		//创建serviceRegistry  代替buildSessionFactory()方法
+   		ServiceRegistry serviceRegistry =new ServiceRegistryBuilder().applySettings(config.getProperties()).buildServiceRegistry();
+   		// 创建session的工厂对象
+   		sf = config.buildSessionFactory(serviceRegistry);
+	}
+	//测试保存：一对多的保存
+	@Test
+	public void testSave1(){
+		Session session = sf.openSession();
+		Transaction tx = session.beginTransaction();
+		//创建对象
+		Employee employee=new Employee();
+		Employee employee2=new Employee();
+		employee.setEname("peace1");
+		employee.setSalary(300);
+		employee2.setEname("peace2");
+		employee2.setSalary(499);
+		//关系set创建
+		Set<Employee>emps=new HashSet<>();
+		emps.add(employee);
+		emps.add(employee2);
+		//创建dept
+		Dept dept=new Dept();
+		dept.setDname("ptoo1项目");
+		dept.setEmps(emps);
+		//持久化
+		session.save(dept);
+		tx.commit();
+		session.close();
+	}
+	//测试保存：多对一的保存，推荐:少了两条update的语句
+		@Test
+		public void testSave2(){
+			Session session = sf.openSession();
+			Transaction tx = session.beginTransaction();
+			//创建对象
+			Employee employee=new Employee();
+			Employee employee2=new Employee();
+			employee.setEname("peace3");
+			employee.setSalary(300);
+			employee2.setEname("peace4");
+			employee2.setSalary(499);
+			//创建dept
+			Dept dept=new Dept();
+			dept.setDname("ptoo2项目");
+			//关系创建:
+			employee.setDept(dept);
+			employee2.setDept(dept);
+			//持久化
+			session.save(dept);
+			session.save(employee);
+			session.save(employee2);
+			tx.commit();
+			session.close();
+		}
+
+	// 测试get
+	@Test
+	public void testget() {
+		Session session = sf.openSession();
+		Transaction tx = session.beginTransaction();
+		// 通过部门获得employee
+		Dept dept = (Dept) session.get(Dept.class, 2);
+		System.out.println(dept.getEmps());// 默认使用懒加载模式
+		// 通过员工获得部门
+		Employee employee = (Employee) session.get(Employee.class, 3);
+		System.out.println(employee.getDept().getDname());
+		tx.commit();
+		session.close();
+	}
+}

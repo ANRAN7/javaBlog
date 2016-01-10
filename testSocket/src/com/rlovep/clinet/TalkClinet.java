@@ -23,11 +23,11 @@ public class TalkClinet {
 	private PrintWriter out = null;
 	// 线程停止flag
 	private boolean flag = true;
-    //单聊
+    //单聊标志
 	private final static String single="single";
 	
 	public static void main(String[] args) {
-		// 启动：
+		// 启动客户端：
 		new TalkClinet().start();
 	}
 	/**
@@ -57,13 +57,17 @@ public class TalkClinet {
 			// 发送消息：
 			String str = null;
 			while (flag && ((str = sysin.readLine()) != null)) {
+				//判断是否为单聊标志。如果不是单聊，就群发消息
 				if(single.equalsIgnoreCase(str)){
 					System.out.println("请输入想跟谁聊 ：");
+					//获取系统输入：
 					if(flag && ((str = sysin.readLine()) != null))
 						{
+						      //发送单聊标志
 						     out.println(single) ;
 						}
 				}
+				//向服务端发送内容：
 				out.println(str);
 			}
 		
@@ -106,16 +110,18 @@ public class TalkClinet {
 	 */
 	 private void recive(){
 		try {
+			//接收服务端消息
 			String str=in.readLine();
 			if(str!=null){
+			//如果是结束聊天，就退出线程
 			if("disconnect".equals(str)){
 				stop();
 				System.out.println("回车退出:");
 			}
 			else 
 			{
-			  System.out.println(str);
-			  
+				//否则显示消息
+			  System.out.println(str);	  
 			}
 			}
 		} catch (IOException e) {
@@ -133,9 +139,9 @@ public class TalkClinet {
 	@Override
 	public void run() {
 		while(flag){
+			//接收消息函数调用
 			recive();
 		}
 	} 
-	 
  }
 }

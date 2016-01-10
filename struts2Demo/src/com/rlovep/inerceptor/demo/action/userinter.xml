@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+      <package name="userinter" extends="struts-default">
+         <interceptors>
+            <interceptor name="loginCheck" class="com.rlovep.inerceptor.demo.action.UserCheckIner"></interceptor>
+            <interceptor-stack name="myStack">
+               <interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="loginCheck"></interceptor-ref>
+            </interceptor-stack>
+         </interceptors>
+         <!-- 【执行拦截器:第一种写法： 当前包下所有的acntion都执行myStack栈】
+		<default-interceptor-ref name="myStack"></default-interceptor-ref>
+		 -->
+         <!-- 全局配置 -->
+		<global-results>
+			<result name="error">/error.jsp</result>
+		</global-results>
+		<action name="userinter_*" class="com.rlovep.inerceptor.demo.action.UserAction" method="{1}">
+		    
+		   <!--第二种写法： 只是在这一个Action中执行myStack栈 
+			<interceptor-ref name="defaultStackt"></interceptor-ref>
+			<interceptor-ref name="loginCheck"></interceptor-ref>
+			-->
+			
+			<!-- 第三种写法：执行用户栈(与第二种写法一样， 只在当前aciton中执行自定义栈) -->
+			<interceptor-ref name="myStack"></interceptor-ref>
+			<!-- 1. 登陆失败 -->
+			<result name="input">/login3.jsp</result>
+			<!-- 2. 登陆成功 -->
+			<result name="success" type="redirectAction">userinter_list</result>
+				<!-- 3. 列表展示 -->
+			<result name="list">/WEB-INF/list.jsp</result>
+		</action>
+      </package>
+</struts>

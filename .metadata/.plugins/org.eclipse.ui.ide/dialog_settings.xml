@@ -5,34 +5,39 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="/media/peace/文档/BaiduYunDownload/javaee/day14_自定义标签&amp;编码实战/01.代码/day14"/>
-			<item value="/media/peace/文档/BaiduYunDownload/javaee/day13_Jsp加强/01.代码/day13"/>
-			<item value="/media/peace/文档/BaiduYunDownload/javaee/day12_编码实战&amp;Jsp基础/01.代码/contactSys_web"/>
-			<item value="/media/peace/文档/BaiduYunDownload/javaee/day12_编码实战&amp;Jsp基础/01.代码/day12_login"/>
-			<item value="/media/peace/文档/BaiduYunDownload/javaee/day12_编码实战&amp;Jsp基础/01.代码/day12"/>
-			<item value="/media/peace/文档/BaiduYunDownload/javaee/day11_会话管理/01.代码/day11_hist"/>
-			<item value="/media/peace/文档/BaiduYunDownload/javaee/day11_会话管理/01.代码/day11"/>
-			<item value="/media/peace/文档/视频教程/视频源码/一、JAVA专区/J2SE_源码/j2se_源码和思维导图/eclipse/Lesson29"/>
-			<item value="/media/peace/文档/视频教程/视频源码/一、JAVA专区/J2SE_源码/j2se_源码和思维导图/eclipse/Lesson28"/>
-			<item value="/media/peace/文档/BaiduYunDownload/javaee/day10_servlet编程/01.代码/day10"/>
-			<item value="/home/peace/workspace/javaThink/day07"/>
-			<item value="/home/peace/workspace/javaThink/01.代码/day06"/>
-			<item value="/home/peace/workspace/javaThink/day01"/>
-			<item value="/home/peace/workspace/javaThink/Lesson27"/>
-			<item value="/home/peace/workspace/javaThink/Lesson30"/>
-			<item value="/home/peace/workspace/javaThink/Lesson23"/>
+			<item value="/home/peace/workspace/hibernate02"/>
+			<item value="/home/peace/workspace/hibernate01"/>
+			<item value="/home/peace/workspace/struts04_eg"/>
+			<item value="/home/peace/workspace/struts04"/>
+			<item value="/home/peace/workspace/struts03_eg"/>
+			<item value="/home/peace/workspace/struts03"/>
+			<item value="/home/peace/workspace/struts02"/>
+			<item value="/home/peace/workspace/day28补发/struts20150313"/>
+			<item value="/home/peace/workspace/day28补发/mystruts"/>
+			<item value="/home/peace/workspace/hotel_v1源码"/>
+			<item value="/home/peace/workspace/day27"/>
+			<item value="/media/peace/文档/BaiduYunDownload/javaee/day27_基础增强/day27"/>
+			<item value="/home/peace/workspace/01.代码/代码/代码/day23_mail"/>
+			<item value="/home/peace/workspace/01.代码/代码/代码/day23_demo"/>
+			<item value="/home/peace/workspace/01.代码/代码/代码/day23"/>
+			<item value="/home/peace/workspace/01.代码/代码/emp_sys"/>
+			<item value="/home/peace/workspace/01.代码/代码/day22"/>
+			<item value="/media/peace/文档/BaiduYunDownload/javaee/day21_过滤器/代码/emp_sys"/>
+			<item value="/media/peace/文档/BaiduYunDownload/javaee/day21_过滤器/代码/day21_demo"/>
+			<item value="/media/peace/文档/BaiduYunDownload/javaee/day21_过滤器/代码/day21"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
 		</list>
 	</section>
 	<section name="NewWizardAction">
-		<item value="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.ui.Basic"/>
-			<item value="org.eclipse.jst.j2ee.internal"/>
+			<item value="org.eclipse.pde.PDE"/>
 			<item value="org.eclipse.wst.web.ui"/>
 		</list>
+	</section>
+	<section name="BasicNewProjectResourceWizard">
 	</section>
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
 		<item value="false" key="FilterByLocation"/>

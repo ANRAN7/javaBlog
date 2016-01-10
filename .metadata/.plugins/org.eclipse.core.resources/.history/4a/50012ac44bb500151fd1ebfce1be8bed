@@ -1,0 +1,49 @@
+package com.rlovep.one2many;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
+import org.hibernate.service.ServiceRegistryBuilder;
+import org.junit.Test;
+
+public class App {
+	private static SessionFactory sf=null;
+	static{
+		Configuration config=new Configuration().configure().addClass(Dept.class).addClass(Employee.class);
+		//创建serviceRegistry  代替buildSessionFactory()方法
+   		ServiceRegistry serviceRegistry =new ServiceRegistryBuilder().applySettings(config.getProperties()).buildServiceRegistry();
+   		// 创建session的工厂对象
+   		sf = config.buildSessionFactory(serviceRegistry);
+	}
+	//测试set
+	@Test
+	public void testSave(){
+		Session session = sf.openSession();
+		Transaction tx = session.beginTransaction();
+		//创建对象
+		Employee employee=new Employee();
+		Employee employee2=new Employee();
+		employee.setEname("peace1");
+		employee.setSalary(300);
+		employee2.setEname("peace2");
+		employee2.setSalary(499);
+		Set<Employee>emps=new HashSet<>();
+		emps.add(employee);
+		emps.add(employee2);
+		//创建dept
+		Dept dept=new Dept();
+		dept.setDname("ptoo项目");
+		dept.setEmps(emps);
+		
+		//持久化
+		employee.setDept(dept);
+		session.save(dept);
+		tx.commit();
+		session.close();
+	}
+}

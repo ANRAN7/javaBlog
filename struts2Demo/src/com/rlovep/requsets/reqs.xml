@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 3. 开启动态方法调用 (默认不开启)-->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+	
+          <!-- 继承自默认包，名字为user -->
+    <package name="reqs" extends="struts-default" >
+    <!-- 配置一个默认的Action 必须放在所有Action和result的前面 -->
+		<default-action-ref name="forwardAction"/>
+    
+    <!-- 配置全局跳转跳转结果视图 -->
+		<global-results>
+			<result name="success">/index.jsp</result>
+		</global-results>
+		
+		<!-- 默认全局跳转action，当出现无效的action时都会跳转到这里，使用了默认的class -->
+       <action name="forwardAction">
+          <result name="success">/default.html</result>
+       </action>
+       
+           <!-- 第一种直接用动态方法 -->
+         <action name="reqs" class="com.rlovep.requsets.RequestActon" >
+             <!-- 配置结果为默认的转发 -->
+            <result name="register">/error.jsp</result>
+            <result name="success">/index.jsp</result>
+         </action>
+         
+        <!--  第二种使用method属性进行区分 -->
+          <action name="register" class="com.rlovep.requsets.RequestActon" method="register">
+                <result name="register">/error.jsp</result>
+          </action>
+          
+           <!--  第三种使用通配符进行区分 -->
+          <action name="rer_*" class="com.rlovep.requsets.RequestActon" method="{1}">
+                <!-- 配置结果为默认的转发 -->
+            <result name="register">/error.jsp</result>
+            <result name="success">/index.jsp</result>
+          </action>
+          		 
+		 <!-- 配置各项默认值 -->
+		 <!-- 
+		 	 name  只配置了访问路径名称
+		 	 class 默认执行的action在struts-default有配置
+		 	 		<default-class-ref class="com.opensymphony.xwork2.ActionSupport" />
+		 	 method  默认为execute
+		 	 默认的方法execute返回值为success,对应的页面去全局视图找。
+		 	 
+		  -->
+		 <action name="test"></action>
+		 
+		 <!-- 什么情况不配置class？ 即处理的aciton -->
+		<!-- 答案： 当只是需要跳转到WEB-INF下资源的时候。 -->
+		 <action name="test2">
+		 	<result name="success" >/WEB-INF/index.jsp</result>
+		 </action>
+		 <!-- 
+		<action name="test" class="com.rlovep.requsets.GlobActon" method="execute">
+			返回结果标记success对应的页面再当前action中没有配置，
+			所以会去找全局配置有是否有success标记对应的页面
+		</action>
+		 -->
+		 <action name="test3" class="com.rlovep.requsets.GlobAction" method="execute">
+		</action>
+    </package>
+</struts>

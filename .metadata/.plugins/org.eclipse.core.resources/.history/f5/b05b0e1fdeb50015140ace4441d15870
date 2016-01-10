@@ -1,0 +1,5 @@
+package com.rlovep.many2many;
+
+public class Project {
+
+}

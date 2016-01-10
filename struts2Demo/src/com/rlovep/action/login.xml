@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+          <!-- 继承自默认包，名字为user -->
+    <package name="user" extends="struts-default"  namespace="/user">
+        <!-- 全局默认结果配置 -->
+        <global-results>
+           <result name="success">/data.jsp</result>
+         </global-results>
+         <!-- 配置api的action -->
+         <action name="api1" class="com.rlovep.action.ApiAction1"></action>
+         <action name="api2" class="com.rlovep.action.ApiAction2"></action>
+         
+           <!--  配置action，使用方法login -->
+         <action name="login" class="com.rlovep.action.UserAction" method="login">
+             <!-- 配置结果为默认的转发 -->
+            <result name="login">/index.jsp</result>
+         </action>
+           <!--  配置action，使用方法login -->
+         <action name="login1" class="com.rlovep.action.Maction" method="login">
+             <!-- 配置结果为默认的转发 -->
+            <result name="login">/index.jsp</result>
+         </action>
+    </package>
+</struts>

@@ -1,0 +1,65 @@
+package com.rlovep.ognl;
+
+import ognl.Ognl;
+import ognl.OgnlContext;
+import ognl.OgnlException;
+
+public class OgnlDemo {
+     /**
+      * 
+     * @Title: test1 
+     * @Description:测试非根元素的值，必须用#号 
+     * @return:void   
+     * @throws 
+     * @author peace w_peace@163.com
+      */
+	public static void test1() {
+		// 创建一个Ognl上下文对象
+		OgnlContext context = new OgnlContext();
+		// 放入数据
+		User user = new User();
+		user.setId(10);
+		user.setName("peace");
+		// 往非跟元素中放值，取值时需要加上#
+		context.put("user", user);
+		// 获取刚刚存入的值
+		try {
+			Object ognl = Ognl.parseExpression("#user.name");
+			// 得到获得的值
+			System.out.println(Ognl.getValue(ognl, context, context.getRoot()));
+		} catch (OgnlException e) {
+			e.printStackTrace();
+		}
+	}
+	/**
+	 * 
+	* @Title: test2 
+	* @Description: 测试根元素的值，不用带#号 
+	* @return:void   
+	* @throws 
+	* @author peace w_peace@163.com
+	 */
+	public static void test2() {
+		// 创建一个Ognl上下文对象
+		OgnlContext context = new OgnlContext();
+		// 放入数据
+		User user = new User();
+		user.setId(10);
+		user.setName("peace2");
+		// 往跟元素中放值，取值时不需要加上#
+		context.setRoot(user);
+		// 获取刚刚存入的值
+		try {
+			Object ognl = Ognl.parseExpression("name");
+			// 得到获得的值
+			System.out.println(Ognl.getValue(ognl, context, context.getRoot()));
+		} catch (OgnlException e) {
+			e.printStackTrace();
+		}
+	}
+     
+    public static void main(String[] args) {
+		test1();
+		test2();
+	}
+}

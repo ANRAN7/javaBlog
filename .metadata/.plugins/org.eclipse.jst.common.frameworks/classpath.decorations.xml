@@ -1,0 +1,12 @@
+<classpath>
+  <container id="struts2Demo!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="/home/peace/workspace/javaThink/struts2Demo/WebContent/WEB-INF/lib/xwork-core-2.3.16.1.jar">
+      <source-attachment-path>/struts2_src/src/xwork-core/src/main</source-attachment-path>
+    </entry>
+  </container>
+  <container id="hiberate!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="/home/peace/workspace/javaThink/hiberate/WebContent/WEB-INF/lib/hibernate-core-4.1.6.Final.jar">
+      <source-attachment-path>/home/peace/applications/hibernate-release-4.1.6.Final/project/hibernate-core</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

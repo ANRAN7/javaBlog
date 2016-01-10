@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.rlovep.one2many">
+   <class name="Employee" table="one_employee">
+       <id name="id">
+        <generator class="native"></generator>
+       </id>
+      <property name="Ename" column="e_name" length="20"></property>
+		<property name="salary" type="double"></property> 
+   </class>
+
+
+</hibernate-mapping>

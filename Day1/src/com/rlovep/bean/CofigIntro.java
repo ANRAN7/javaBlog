@@ -17,7 +17,7 @@ public class CofigIntro {
 	public void getAllProperty() throws IntrospectionException{
 		//Introspector 内省类
 		BeanInfo beanInfo = Introspector.getBeanInfo(Person.class);
-		//通过BeanInfo获取所有的属性描述其
+		//通过BeanInfo获取所有的属性描述
 		PropertyDescriptor[] descriptors = beanInfo.getPropertyDescriptors(); //获取一个类中的所有属性描述器
 		for(PropertyDescriptor p : descriptors){
 			//获得所有get方法

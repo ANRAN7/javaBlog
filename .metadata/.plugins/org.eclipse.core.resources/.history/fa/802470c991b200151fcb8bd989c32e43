@@ -1,0 +1,17 @@
+package com.rlovep.ognl;
+
+public class OgnlDemo {
+	/**
+	 * 
+	* @Title: test1 
+	* @Description: TODO 
+	* @return:void   
+	* @throws 
+	* @author peace w_peace@163.com
+	 */
+     public static void  test1(){
+    	 //创建一个Ognl上下文对象
+  
+     }
+
+}

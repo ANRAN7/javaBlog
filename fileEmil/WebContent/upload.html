@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>上传文件</title>
+</head>
+<body>
+       <!--action="/fileEmil/upload1"给浏览器的路径需要写出工程名  -->
+  <form name="upload_test" action="/fileEmil/upload1"   
+        method="post" enctype="multipart/form-data">
+      文件名：<input type="text" name="filename"/><br/>
+      上传文件：<input type="file" name="file"/><br/>
+      <input type="submit" value="提交" />
+  </form>
+</body>
+</html>

@@ -11,6 +11,74 @@
     <short-name>rlovep</short-name>
      <!-- tld文件的唯一标记 -->
    <uri>http://rlovep.com</uri>
+   <!-- 定义标签，标签要放在方法前面 -->
+   <tag>
+   <!-- 标签名 -->
+   <name>showIp</name>
+   <!-- 标签处理类 -->
+   <tag-class>com.rlovep.tags.ShowIp</tag-class>
+   <!-- 输出标签体的内容格式标签体不可以写jsp的java代码 -->
+   <body-content>scriptless</body-content>
+   </tag>
+   <tag>
+   <!-- 标签名 -->
+   <name>AttributeTags</name>
+   <!-- 标签处理类 -->
+   <tag-class>com.rlovep.tags.AttributeTags</tag-class>
+   <!-- 输出标签体的内容格式标签体不可以写jsp的java代码 -->
+   <body-content>scriptless</body-content>
+   <!-- 配置属性name -->
+   <attribute>
+      <name>name</name>
+       <!-- 是否必填 -->
+     <required>true</required>
+       <!-- 是否支持EL表达式 -->
+     <rtexprvalue>true</rtexprvalue>
+   </attribute>
+   <!-- 配置属性value -->
+   <attribute>
+      <name>value</name>
+       <!-- 是否必填 -->
+     <required>true</required>
+       <!-- 是否支持EL表达式 -->
+     <rtexprvalue>true</rtexprvalue>
+   </attribute>
+   </tag>
+   <!-- 定义标签，choose-->
+   <tag>
+   <!-- 标签名 -->
+   <name>choose</name>
+   <!-- 标签处理类 -->
+   <tag-class>com.rlovep.tags.ChooseTag</tag-class>
+   <!-- 输出标签体的内容格式标签体不可以写jsp的java代码 -->
+   <body-content>scriptless</body-content>
+   </tag>
+     <!-- 定义标签，when-->
+    <tag>
+   <!-- 标签名 when -->
+   <name>When</name>
+   <!-- 标签处理类 -->
+   <tag-class>com.rlovep.tags.whenTag</tag-class>
+   <!-- 输出标签体的内容格式标签体不可以写jsp的java代码 -->
+   <body-content>scriptless</body-content>
+   <!-- 配置属性name -->
+   <attribute>
+      <name>test</name>
+       <!-- 是否必填 -->
+     <required>true</required>
+       <!-- 是否支持EL表达式 -->
+     <rtexprvalue>true</rtexprvalue>
+   </attribute>
+   </tag>
+   <!-- 定义标签，Otherwise-->
+   <tag>
+   <!-- 标签名 -->
+   <name>otherwise</name>
+   <!-- 标签处理类 -->
+   <tag-class>com.rlovep.tags.OtherWiseTag</tag-class>
+   <!-- 输出标签体的内容格式标签体不可以写jsp的java代码 -->
+   <body-content>scriptless</body-content>
+   </tag>
    <!-- 定义第一个方法 -->
    <function>
    <!-- 定义方法名 -->
@@ -29,4 +97,5 @@
    	<!-- 定义函数的实现方法：包括返回值和函数名以及参数 -->
    	<function-signature>int count(java.lang.String)</function-signature>
    </function>
+   
 </taglib>

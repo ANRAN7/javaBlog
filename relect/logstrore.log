@@ -1,0 +1,6 @@
+2015-12-12 23:11:53,579 INFO com.rlovep.log4j.Test.main() - 保存： 开始进入保存方法
+2015-12-12 23:11:53,583 ERROR com.rlovep.log4j.Test.main() - 执行App类Save()方法出现异常！
+2015-12-12 23:11:53,583 DEBUG com.rlovep.log4j.Test.main() - 调试信息
+2015-12-12 23:11:53,583 INFO com.rlovep.log4j.Test.main() - 信息提示
+2015-12-12 23:11:53,584 WARN com.rlovep.log4j.Test.main() - 警告
+2015-12-12 23:11:53,584 ERROR com.rlovep.log4j.Test.main() - 异常

@@ -5,7 +5,6 @@ import java.io.FileReader;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 /*
- * 通过配置文件更改对象的属性，比如注册的时候，服务器可以通过接收配置文件进行更改；
  * 此去用反射进行更改，直接更改实现域的值；比较麻烦
  */
 public class CofigRef {

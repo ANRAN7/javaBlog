@@ -6,22 +6,28 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="isRegEx"/>
-		<item value="Update" key="selection"/>
+		<item value="execute" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="Update"/>
-			<item value="^(.*)$"/>
-			<item value=" \^\(\.\*\)\$"/>
-			<item value=" ^(.*)$"/>
-			<item value="&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;"/>
-			<item value="&lt;a"/>
-			<item value="http://my.tianya.cn/39043556"/>
-			<item value="@"/>
+			<item value="execute"/>
+			<item value="orderId"/>
+			<item value="saveFood"/>
+			<item value="foodtypes"/>
+			<item value="cn\.itcast"/>
+			<item value="style/"/>
+			<item value="in"/>
+			<item value="filter"/>
 		</list>
 		<list key="replacehistory">
+			<item value="orders_id"/>
+			<item value="com.rlovep"/>
+			<item value="/sys/style"/>
+			<item value="${pageContext.request.contextPath }/sys/style/"/>
+			<item value="d"/>
+			<item value="com.rlovep.contact"/>
 			<item value="\1&quot;"/>
 		</list>
 	</section>
@@ -29,7 +35,7 @@
 		<item value="322" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		<item value="425" key="DIALOG_HEIGHT"/>
-		<item value="425" key="DIALOG_X_ORIGIN"/>
-		<item value="107" key="DIALOG_Y_ORIGIN"/>
+		<item value="1192" key="DIALOG_X_ORIGIN"/>
+		<item value="199" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

@@ -37,9 +37,13 @@ public class Clinet01 {
 			out=new PrintWriter(socket.getOutputStream());
 			//获得socket的输入流
 			in=new BufferedReader(new InputStreamReader(socket.getInputStream()));
+			//发送数据
 			out.println("peace");
+			//刷新才会立即发送
 			out.flush();
-			String str=null;
+			  //接收数据
+			   String str=null;
+			   //此去会一直等待服务端发送一个数据；
 		        str=in.readLine();
 				System.out.println("收到:"+str);
 			
@@ -51,6 +55,7 @@ public class Clinet01 {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}finally {
+			//关闭连接
 			if(socket!=null){
 				try {
 					socket.close();

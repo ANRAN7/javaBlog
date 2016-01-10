@@ -80,7 +80,7 @@ ${student.name } -${student.age }
         ${map['102'].name } -  ${map['102'].age }<br/>
 <%--el还可以执行算法表达式 --%>
 
-<%--el表达是语言的自定义函数 
+<%--el表达语言的自定义函数 
 本质是为了调用提供一种方法允许el中调用某类的静态方法：
 1.在src建立开发处理类，这个类包含若干个静态方法。当然这个步骤可以省掉使用jdk库的类也是可以的
 2.使用标签库定义函数：定义函数的方式与定义标签的方式相似。增加function标签就行；
@@ -88,7 +88,7 @@ ${student.name } -${student.age }
 --%>
 此去表达式调用函数：<br/>
 
-peace倒转：${rlovep:reverse(student.name)}
+peace倒转：${rlovep:reverse(student.name)}<%--调用reverse方法使传入的student.name反转--%>
 <br/>
 peace字符个数：${rlovep:count(student.name)}
 </body>

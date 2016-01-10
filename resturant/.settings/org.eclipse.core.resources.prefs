@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//WebContent/app/detail/caidan.jsp=UTF-8
+encoding//WebContent/error/error.jsp=UTF-8
+encoding//WebContent/sys/order/orderList.jsp=UTF-8
+encoding//src/log4j.properties=GBK

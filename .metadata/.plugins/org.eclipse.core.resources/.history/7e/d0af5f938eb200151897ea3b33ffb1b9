@@ -1,0 +1,8 @@
+package com.rlovep.ognl;
+
+public class OgnlDemo {
+     public static void  test1(){
+    	 //创建一个Ognl上下文对象
+    	 OgnlContext 
+     }
+}

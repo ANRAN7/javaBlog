@@ -12,6 +12,7 @@
 			<item value="org.eclipse.jdt.ui.JavaSearchPage"/>
 			<item value="org.eclipse.wst.jsdt.ui.JavaSearchPage"/>
 			<item value="org.eclipse.pde.internal.ui.search.SearchPage"/>
+			<item value="de.guhsoft.jinto.ui.resourcePage"/>
 		</list>
 		<list key="Search.enabledPageIds">
 			<item value="org.eclipse.rse.internal.files.ui.search.searchPage"/>
@@ -21,15 +22,16 @@
 			<item value="org.eclipse.jdt.ui.JavaSearchPage"/>
 			<item value="org.eclipse.wst.jsdt.ui.JavaSearchPage"/>
 			<item value="org.eclipse.pde.internal.ui.search.SearchPage"/>
+			<item value="de.guhsoft.jinto.ui.resourcePage"/>
 		</list>
 	</section>
 	<section name="SearchDialog">
-		<item value="org.eclipse.jdt.ui.JavaSearchPage" key="PREVIOUS_PAGE"/>
+		<item value="de.guhsoft.jinto.ui.resourcePage" key="PREVIOUS_PAGE"/>
 	</section>
 	<section name="DialogBounds_SearchDialog">
-		<item value="850" key="DIALOG_WIDTH"/>
+		<item value="1043" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="323" key="DIALOG_HEIGHT"/>
+		<item value="324" key="DIALOG_HEIGHT"/>
 		<item value="502" key="DIALOG_X_ORIGIN"/>
 		<item value="327" key="DIALOG_Y_ORIGIN"/>
 	</section>

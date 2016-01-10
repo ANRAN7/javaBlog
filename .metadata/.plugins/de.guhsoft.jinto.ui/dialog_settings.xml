@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="de.guhsoft.jinto.resourceSearchPageV2">
+		<item value="true" key="undefinedKeys"/>
+		<item value="true" key="undeterminableKeys"/>
+		<item value="true" key="unusedKeys"/>
+		<item value="false" key="optionsReference"/>
+	</section>
+</section>

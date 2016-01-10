@@ -49,9 +49,8 @@ public class Servers {
 					String str=null;
 					 str=in.readLine();
 						System.out.println("收到"+str);
-					
+					//发送数据
 					out.println("hello"+i++);
-					
 					out.flush();
 				} catch (IOException e) {
 					// TODO Auto-generated catch block

@@ -18,10 +18,6 @@ BeanUtils的好处：
 	1. BeanUtils设置属性值的时候，如果属性是基本数据 类型，BeanUtils会自动帮我转换数据类型。
  	2. BeanUtils设置属性值的时候底层也是依赖于get或者Set方法设置以及获取属性值的。
  	3. BeanUtils设置属性值,如果设置的属性是其他的引用 类型数据，那么这时候必须要注册一个类型转换器。
- 	
-
-
-
 BeanUtilss使用的步骤：
 	1. 导包commons-logging.jar 、 commons-beanutils-1.8.0.jar
 
@@ -58,8 +54,6 @@ public class BeanUtil {
 		BeanUtils.setProperty(e, "name",name);
 		BeanUtils.setProperty(e, "salary",salary);
 		BeanUtils.setProperty(e, "birthday",birthday);//需要注册转换器
-		
-		
 		System.out.println(e);
 		
 	}

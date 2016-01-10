@@ -1,0 +1,63 @@
+package com.rlovep.many2many;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
+import org.hibernate.service.ServiceRegistryBuilder;
+import org.junit.Test;
+
+import com.sun.xml.internal.txw2.TXW;
+
+
+public class App {
+	private static SessionFactory sf=null;
+	static{
+		Configuration config=new Configuration().configure().addClass(Project.class).addClass(Developer.class);
+		//创建serviceRegistry  代替buildSessionFactory()方法
+   		ServiceRegistry serviceRegistry =new ServiceRegistryBuilder().applySettings(config.getProperties()).buildServiceRegistry();
+   		// 创建session的工厂对象
+   		sf = config.buildSessionFactory(serviceRegistry);
+	}
+	@Test
+	public void testSave(){
+		Session session = sf.openSession();
+		Transaction tx = session.beginTransaction();
+		//创建项目
+		Project project1=new Project();
+		Project project2=new Project();
+		project1.setName("ptool1");
+		project2.setName("ptool2");
+		//创建员工对象
+		Developer developer1=new Developer();
+		Developer developer2=new Developer();
+		Developer developer3=new Developer();
+		developer1.setName("peace1");
+		developer2.setName("peace2");
+		developer3.setName("peace3");
+		//创建关系
+		/*
+		 * 工程1：peace1，peace2
+		 * 工程2：peace2，peace3
+		 * peace1：工程1
+		 * peace2：工程1和2
+		 * peace3：工程2
+		 * 
+		 */
+		/*project1.getDevelopers().add(developer1);
+		project1.getDevelopers().add(developer2);
+		project2.getDevelopers().add(developer3);
+		project2.getDevelopers().add(developer2);*/
+		developer1.getProjects().add(project1);
+		developer2.getProjects().add(project1);
+		developer2.getProjects().add(project2);
+		developer3.getProjects().add(project2);
+		session.save(developer3);
+		session.save(developer2);
+		session.save(developer1);
+		
+		tx.commit();
+		session.close();
+	}
+}

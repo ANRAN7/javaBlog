@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 elements to &apos;lib&apos;&#x0A;- Original project: &apos;Day1&apos;&#x0A;- Destination element: &apos;lib&apos;&#x0A;- Original elements:&#x0A;     commons-logging.jar&#x0A;     c3p0-0.9.1.2.jar&#x0A;     commons-beanutils-1.8.0.jar&#x0A;     mysql-connector-java-5.1.37-bin.jar&#x0A;     commons-dbutils-1.6.jar" description="Copy files" element1="lib/commons-logging.jar" element2="lib/c3p0-0.9.1.2.jar" element3="lib/commons-beanutils-1.8.0.jar" element4="lib/mysql-connector-java-5.1.37-bin.jar" element5="lib/commons-dbutils-1.6.jar" files="5" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1450017316125" target="/resturant/WebContent/WEB-INF/lib" units="0" version="1.0"/>
+</session>

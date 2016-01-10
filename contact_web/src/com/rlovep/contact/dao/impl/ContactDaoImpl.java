@@ -159,5 +159,16 @@ public class ContactDaoImpl implements ContactDao  {
 		}
 		return c;
 	}
+	
+	@Override
+	public boolean checkContact(String name) {
+		Document doc = XMLUtil.getDocument();
+		Element e = (Element)doc.selectSingleNode("/name[text()='"+name+"']");//通过搜索内容寻找到name
+		boolean flag=false;
+		if(e!=null){
+			flag=true;
+		}
+		return flag;
+	}
 
 }

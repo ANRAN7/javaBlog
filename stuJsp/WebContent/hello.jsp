@@ -1,8 +1,7 @@
-<%@page import="java.util.Random"%>
 <%@page import="java.util.Date"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" import="java.util.Random"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -66,6 +65,7 @@
 	 		 <br/>
 	 	<% 
 	 	}%>
-	
+	 	<%--转换字符格式 --%>
+	<%-- <%=new String(request.getParameter("name").getBytes("ISO8859_1"),"utf-8")%> --%>
 </body>
 </html>

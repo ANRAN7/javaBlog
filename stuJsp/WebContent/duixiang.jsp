@@ -37,6 +37,8 @@ config对象：对应servlet中的config
  <%=config.getServletName() %>
  <%--
 exception对象：在错误页面中有效，可以获得异常属性
+亲发生错误：该对象只有当编译指令page的isErrorPage="true"才有效
+<%=exception.getMessage() %>
  --%>
  <%--
 request对象：对应servlet中的request
@@ -70,9 +72,9 @@ pagecontext对象：jsp的页面对象
  	pageContext.setAttribute("tl","1881679",pageContext.APPLICATION_SCOPE);
  	//重定向到另一个页面取得数据：
  	response.sendRedirect(request.getContextPath()+"/pageget.jsp");
+ 	//删除存储的对象
+ 	pageContext.removeAttribute("age",PageContext.REQUEST_SCOPE );
  %>
  
 </body>
-
-
 </html>

@@ -1,0 +1,9 @@
+ <!-- 使用外键一对一 -->
+<one-to-one name="product" class="Product" property-ref="adress"></one-to-one>
+<!-- 使用adress作为外键 -->
+<many-to-one name="adress" class="Adress" column="address_id"
+	cascade="all" unique="true"></many-to-one>
+
+<!-- 使用主键一对一 -->
+<one-to-one name="product" class="Product" constrained="true"></one-to-one>
+<one-to-one name="adress" class="Adress" cascade="all"></one-to-one>

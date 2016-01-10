@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy source folder &apos;mail.jar&apos; to &apos;lib&apos;&#x0A;- Original project: &apos;day23_mail&apos;&#x0A;- Destination element: &apos;lib&apos;&#x0A;- Original element: &apos;day23_mail/lib/mail.jar&apos;" description="Copy source folder" element1="/lib\/mail.jar" flags="6" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyRoots" roots="1" stamp="1448105712526" target="/fileEmil/WebContent/WEB-INF/lib" version="1.0"/>
+</session>

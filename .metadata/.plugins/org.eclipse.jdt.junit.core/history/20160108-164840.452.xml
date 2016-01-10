@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="App.removeRelation (1)" project="hiberate" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="removeRelation" classname="com.rlovep.many2many.App" time="1.392"/>
+</testrun>

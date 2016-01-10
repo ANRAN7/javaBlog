@@ -1,0 +1,5 @@
+package com.rlovep.Utils;
+
+public class HibernateUtil {
+
+}
