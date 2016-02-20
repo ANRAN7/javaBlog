@@ -1,7 +1,7 @@
 eclipse.preferences.version=1
 org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=/home/peace/applications/javaee/eclipse/
 org.eclipse.jdt.core.classpathVariable.JRE_LIB=/usr/lib/jvm/jdk8/jre/lib/rt.jar
-org.eclipse.jdt.core.classpathVariable.JRE_SRC=/struts2_src/src
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=/home/peace/applications/javaee/src/jdk
 org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
 org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=/home/peace/applications/javaee/eclipse/plugins/org.junit_4.12.0.v201504281640/
 org.eclipse.jdt.core.classpathVariable.M2_REPO=/home/peace/.m2/repository

@@ -14,5 +14,10 @@
 			<type>2</type>
 			<location>/home/peace/applications/hibernate-release-4.1.6.Final/project/hibernate-core</location>
 		</link>
+		<link>
+			<name>.link1</name>
+			<type>2</type>
+			<location>/home/peace/applications/javaee/src/jdk</location>
+		</link>
 	</linkedResources>
 </projectDescription>

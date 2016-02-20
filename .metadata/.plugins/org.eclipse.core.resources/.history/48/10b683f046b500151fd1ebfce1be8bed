@@ -1,9 +1,0 @@
-package com.rlovep.one2many;
-
-public class Employee {
-    private int id;
-    private String Ename;
-    private double salary;
-    //多对一，多个员工可以对应一个部门；
-    private Dept dept;
-}

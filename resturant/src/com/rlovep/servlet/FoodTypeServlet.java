@@ -25,14 +25,14 @@ import com.rlovep.utils.BeanFactory;
 public class FoodTypeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     //获得service
-	private IFoodTypeService service1=BeanFactory.getInstance("foodTypeService", IFoodTypeService.class);
+	private IFoodTypeService service=BeanFactory.getInstance("foodTypeService", IFoodTypeService.class);
 	//转发和重定向uri
     private Object uri;
     @Override
     public void init(ServletConfig config) throws ServletException {
     	super.init(config);
     	//放置菜系列表
-    	List<FoodType>list=service1.query();
+    	List<FoodType>list=service.query();
     	config.getServletContext().setAttribute("foodtype",list);
     }
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -65,7 +65,6 @@ public class FoodTypeServlet extends HttpServlet {
 		doGet(request, response);
 	}
     private void add(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    	IFoodTypeService service=BeanFactory.getInstance("foodTypeService", IFoodTypeService.class);
     	try {
 			String name=request.getParameter("name");
 			FoodType foodType=new FoodType();
@@ -79,7 +78,6 @@ public class FoodTypeServlet extends HttpServlet {
 		}
     }
     private void list(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    	IFoodTypeService service=BeanFactory.getInstance("foodTypeService", IFoodTypeService.class);
     	try {
 			List<FoodType> list = service.query();
 			request.setAttribute("list", list);
@@ -105,7 +103,6 @@ public class FoodTypeServlet extends HttpServlet {
     * @author peace w_peace@163.com
      */
     private void goTo(HttpServletRequest request,HttpServletResponse response,Object uri) throws ServletException,IOException{
-    	IFoodTypeService service=BeanFactory.getInstance("foodTypeService", IFoodTypeService.class);
     	if(uri instanceof RequestDispatcher)
     	{
     		((RequestDispatcher) uri).forward(request, response);
@@ -114,7 +111,6 @@ public class FoodTypeServlet extends HttpServlet {
     	}
     }
     private void show(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    	IFoodTypeService service=BeanFactory.getInstance("foodTypeService", IFoodTypeService.class);
     	try {
 			String id=request.getParameter("id");
 			FoodType foodType=service.findById(Integer.parseInt(id));
@@ -128,7 +124,6 @@ public class FoodTypeServlet extends HttpServlet {
 		}
     }
     private void update(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    	IFoodTypeService service=BeanFactory.getInstance("foodTypeService", IFoodTypeService.class);
     	try {
     		FoodType type = new FoodType();
 			Map<String, String[]> map = request.getParameterMap();
@@ -142,7 +137,6 @@ public class FoodTypeServlet extends HttpServlet {
 		}
     }
     private void delete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    	IFoodTypeService service=BeanFactory.getInstance("foodTypeService", IFoodTypeService.class);
     	try {
     		String id = request.getParameter("id");
     		service.delete(Integer.parseInt(id));
@@ -154,7 +148,6 @@ public class FoodTypeServlet extends HttpServlet {
 		}
     }
     private void search(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    	IFoodTypeService service=BeanFactory.getInstance("foodTypeService", IFoodTypeService.class);
     	try {
     		String keyword = request.getParameter("keyword");
     		if(keyword!=null){

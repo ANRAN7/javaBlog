@@ -41,14 +41,13 @@ public class OrderServlet extends BaseServlet {
 	@Override
     public void init(ServletConfig config) throws ServletException {
     	super.init(config);
-    	List<Orders> list = ordersService1.query();
-    	List<OrderDetail> list2 = orderDetailService1.query();
+    	List<Orders> list = ordersService.query();
+    	List<OrderDetail> list2 = orderDetailService.query();
     	config.getServletContext().setAttribute("orders", list);
     	config.getServletContext().setAttribute("orderDetail", list2);
     }
    public Object putInCar(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException{
 		Object uri = null;
-		IFoodService foodService = BeanFactory.getInstance("foodService", IFoodService.class);
 		HttpSession session = request.getSession();
 		Map<Food, Integer> map = new LinkedHashMap<Food, Integer>();
 		try {
@@ -79,7 +78,6 @@ public class OrderServlet extends BaseServlet {
 	}
    public Object removeOrder(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException{
 		Object uri = null;
-		IFoodService foodService = BeanFactory.getInstance("foodService", IFoodService.class);
 		HttpSession session = request.getSession();
 		try {
 			// 获取实物id
@@ -99,7 +97,6 @@ public class OrderServlet extends BaseServlet {
 	}
    public Object alterSorder(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException{
 		Object uri = null;
-		IFoodService foodService = BeanFactory.getInstance("foodService", IFoodService.class);
 		HttpSession session = request.getSession();
 		try {
 			// 获取实物id
@@ -121,10 +118,6 @@ public class OrderServlet extends BaseServlet {
 	}
    public Object takeOrder(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException{
 		Object uri = null;
-		IOrdersService ordersService = BeanFactory.getInstance("ordersService",
-				IOrdersService.class);
-		IOrderDetailService orderDetailService= BeanFactory.getInstance("orderDetailService",
-				IOrderDetailService.class);
 		HttpSession session = request.getSession();
 		try {
 			//获取加入餐车时的食物数据
@@ -172,8 +165,6 @@ public class OrderServlet extends BaseServlet {
 		}
 	}
    public Object getOrderDetail(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException{
-		IOrderDetailService orderDetailService= BeanFactory.getInstance("orderDetailService",
-				IOrderDetailService.class);
 	     Object uri = null;
 		 String id = request.getParameter("orderId");
 		 List<OrderDetail> list=null;
@@ -191,11 +182,6 @@ public class OrderServlet extends BaseServlet {
 		}
 	}
    public Object pay(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException{
-	   IDinnerTableService tableService=BeanFactory.getInstance("dinnerTableService", IDinnerTableService.class);
-	   IOrdersService ordersService= BeanFactory.getInstance("ordersService",
-				IOrdersService.class);
-	   IOrderDetailService orderDetailService= BeanFactory.getInstance("orderDetailService",
-				IOrderDetailService.class);
  	     Object uri = null;
  	    try {
 			String oid = request.getParameter("orderId");
@@ -234,7 +220,6 @@ public class OrderServlet extends BaseServlet {
  		}
  	}
    public Object call(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException{
-	   IDinnerTableService tableService=BeanFactory.getInstance("dinnerTableService", IDinnerTableService.class);
  	     Object uri = null;
 		try {
 			HttpSession session = request.getSession();
@@ -263,8 +248,6 @@ public class OrderServlet extends BaseServlet {
  	}
    public Object getOrderList(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-	   IOrdersService ordersService= BeanFactory.getInstance("ordersService",
-				IOrdersService.class);
 		Object uri = null;
 		// 1. 获取“当前页”参数； (第一次访问当前页为null)
 		String currPage = request.getParameter("currentPage");

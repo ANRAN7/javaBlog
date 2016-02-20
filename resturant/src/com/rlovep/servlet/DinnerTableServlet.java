@@ -25,11 +25,10 @@ public class DinnerTableServlet extends BaseServlet {
     @Override
     public void init(ServletConfig config) throws ServletException {
     	super.init(config);
-    	List<DinnerTable> list = tableService1.query();
+    	List<DinnerTable> list = tableService.query();
     	config.getServletContext().setAttribute("table", list);
     }  
     public Object search(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException{
-    	IDinnerTableService tableService = BeanFactory.getInstance(	"dinnerTableService", IDinnerTableService.class);
     	String keyword=request.getParameter("keyword");
     	try {
 			if(keyword!=null){
@@ -47,7 +46,6 @@ public class DinnerTableServlet extends BaseServlet {
 		}
     }
     public Object delete(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException{
-    	IDinnerTableService tableService = BeanFactory.getInstance(	"dinnerTableService", IDinnerTableService.class);
     	try {
     		String id=request.getParameter("id");
 			if(id!=null){
@@ -64,7 +62,6 @@ public class DinnerTableServlet extends BaseServlet {
 		}
     }
 public Object list(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException{
-	IDinnerTableService tableService = BeanFactory.getInstance(	"dinnerTableService", IDinnerTableService.class);
     	try {
     		List<DinnerTable> list = tableService.query();
     		request.setAttribute("list", list);
@@ -78,7 +75,6 @@ public Object list(HttpServletRequest request,HttpServletResponse response)throw
 		}
    }
 public Object update(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException{
-	IDinnerTableService tableService = BeanFactory.getInstance(	"dinnerTableService", IDinnerTableService.class);
 	try {
 		String id=request.getParameter("id");
 		if(id!=null){
@@ -95,7 +91,6 @@ public Object update(HttpServletRequest request,HttpServletResponse response)thr
 	}
  }
 public Object add(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException{
-	IDinnerTableService tableService = BeanFactory.getInstance(	"dinnerTableService", IDinnerTableService.class);
 	try {
 		String tableName=request.getParameter("tableName");
 		if(tableName!=null){

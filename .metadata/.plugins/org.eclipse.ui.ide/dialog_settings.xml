@@ -5,6 +5,16 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/peace/workspace/hr_sys"/>
+			<item value="/home/peace/workspace/ssh"/>
+			<item value="/home/peace/workspace/spring-h"/>
+			<item value="/home/peace/workspace/spring03"/>
+			<item value="/home/peace/workspace/spring02"/>
+			<item value="/home/peace/workspace/spring-struts"/>
+			<item value="/home/peace/workspace/spring01"/>
+			<item value="/home/peace/workspace/struts-hibernate"/>
+			<item value="/home/peace/workspace/hibernate04"/>
+			<item value="/home/peace/workspace/hibernate03"/>
 			<item value="/home/peace/workspace/hibernate02"/>
 			<item value="/home/peace/workspace/hibernate01"/>
 			<item value="/home/peace/workspace/struts04_eg"/>
@@ -15,16 +25,6 @@
 			<item value="/home/peace/workspace/day28补发/struts20150313"/>
 			<item value="/home/peace/workspace/day28补发/mystruts"/>
 			<item value="/home/peace/workspace/hotel_v1源码"/>
-			<item value="/home/peace/workspace/day27"/>
-			<item value="/media/peace/文档/BaiduYunDownload/javaee/day27_基础增强/day27"/>
-			<item value="/home/peace/workspace/01.代码/代码/代码/day23_mail"/>
-			<item value="/home/peace/workspace/01.代码/代码/代码/day23_demo"/>
-			<item value="/home/peace/workspace/01.代码/代码/代码/day23"/>
-			<item value="/home/peace/workspace/01.代码/代码/emp_sys"/>
-			<item value="/home/peace/workspace/01.代码/代码/day22"/>
-			<item value="/media/peace/文档/BaiduYunDownload/javaee/day21_过滤器/代码/emp_sys"/>
-			<item value="/media/peace/文档/BaiduYunDownload/javaee/day21_过滤器/代码/day21_demo"/>
-			<item value="/media/peace/文档/BaiduYunDownload/javaee/day21_过滤器/代码/day21"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>

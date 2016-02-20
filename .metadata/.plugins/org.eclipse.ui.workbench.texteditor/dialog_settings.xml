@@ -6,29 +6,30 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="isRegEx"/>
-		<item value="execute" key="selection"/>
+		<item value="Open" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="open"/>
+			<item value="emp"/>
+			<item value="cn\.itcast\.g_pointcut"/>
 			<item value="execute"/>
 			<item value="orderId"/>
 			<item value="saveFood"/>
 			<item value="foodtypes"/>
 			<item value="cn\.itcast"/>
-			<item value="style/"/>
-			<item value="in"/>
-			<item value="filter"/>
 		</list>
 		<list key="replacehistory">
+			<item value="obj"/>
+			<item value="com.rlovep.aop.xml"/>
 			<item value="orders_id"/>
 			<item value="com.rlovep"/>
 			<item value="/sys/style"/>
 			<item value="${pageContext.request.contextPath }/sys/style/"/>
 			<item value="d"/>
 			<item value="com.rlovep.contact"/>
-			<item value="\1&quot;"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

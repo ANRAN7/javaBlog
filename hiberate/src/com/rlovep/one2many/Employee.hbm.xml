@@ -7,7 +7,7 @@
        <id name="id">
         <generator class="native"></generator>
        </id>
-      <property name="Ename" column="e_name" length="20"></property>
+      <property name="Ename"  length="20"></property>
 		<property name="salary" type="double"></property> 
 		<!-- 
 			多对一映射配置

@@ -37,9 +37,9 @@ public class FoodServlet extends BaseServlet {
     	//设置每页显示的行数
     	pageBean.setPageCount(6);
     	//将第一页进行封装
-    	foodService1.getAll(pageBean);
+    	foodService.getAll(pageBean);
     	//获得所有食品
-    	List<Food>list=foodService1.query();
+    	List<Food>list=foodService.query();
     	config.getServletContext().setAttribute("food", list);
     	config.getServletContext().setAttribute("pb", pageBean);
     }
@@ -50,10 +50,6 @@ public class FoodServlet extends BaseServlet {
 
     public Object list(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-    	IFoodService foodService = BeanFactory.getInstance("foodService",
-    			IFoodService.class);
-    	IFoodTypeService foodTypeService = BeanFactory.getInstance(
-    			"foodTypeService", IFoodTypeService.class);
 		try {
 			// 1. 获取“当前页”参数； (第一次访问当前页为null)
 			String currPage = request.getParameter("currentPage");
@@ -96,8 +92,7 @@ public class FoodServlet extends BaseServlet {
 
     public Object findFoodType(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-    	IFoodTypeService foodTypeService = BeanFactory.getInstance(
-    			"foodTypeService", IFoodTypeService.class);
+    	
 		List<FoodType> foodtypes = foodTypeService.query();
 		request.setAttribute("foodtypes", foodtypes);
 		uri = request.getRequestDispatcher("/sys/food/saveFood.jsp");
@@ -106,8 +101,7 @@ public class FoodServlet extends BaseServlet {
 
     public Object add(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-    	IFoodService foodService = BeanFactory.getInstance("foodService",
-    			IFoodService.class);
+    	
 		try {
 			FileItemFactory factory = new DiskFileItemFactory();
 			ServletFileUpload upload = new ServletFileUpload(factory);
@@ -167,10 +161,7 @@ public class FoodServlet extends BaseServlet {
 
     public Object query(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-    	IFoodTypeService foodTypeService = BeanFactory.getInstance(
-    			"foodTypeService", IFoodTypeService.class);
-    	IFoodService foodService = BeanFactory.getInstance("foodService",
-    			IFoodService.class);
+    	
 		try {
 			List<Food> list = foodService.query();
 			request.setAttribute("list", list);
@@ -192,10 +183,7 @@ public class FoodServlet extends BaseServlet {
 
     public Object update(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-    	IFoodService foodService = BeanFactory.getInstance("foodService",
-    			IFoodService.class);
-    	IFoodTypeService foodTypeService = BeanFactory.getInstance(
-    			"foodTypeService", IFoodTypeService.class);
+    
 		try {
 			FileItemFactory factory = new DiskFileItemFactory();
 			ServletFileUpload upload = new ServletFileUpload(factory);
@@ -261,8 +249,7 @@ public class FoodServlet extends BaseServlet {
 
     public Object delete(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-    	IFoodService foodService = BeanFactory.getInstance("foodService",
-    			IFoodService.class);
+    	
 		try {
 			String id = request.getParameter("id");
 			foodService.delete(Integer.parseInt(id));
@@ -277,10 +264,7 @@ public class FoodServlet extends BaseServlet {
 
     public Object search(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-    	IFoodService foodService = BeanFactory.getInstance("foodService",
-    			IFoodService.class);
-    	IFoodTypeService foodTypeService = BeanFactory.getInstance(
-    			"foodTypeService", IFoodTypeService.class);
+    	
 		try {
 			String keyword = request.getParameter("keyword");
 			if (keyword != null) {
@@ -309,11 +293,7 @@ public class FoodServlet extends BaseServlet {
 	// 这个方法没用
     public Object  show(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		/*findFoodType(request, response);*/
-    	IFoodService foodService = BeanFactory.getInstance("foodService",
-    			IFoodService.class);
-    	IFoodTypeService foodTypeService = BeanFactory.getInstance(
-    			"foodTypeService", IFoodTypeService.class);
+		
 		String id = request.getParameter("id");
 		Food food = foodService.findById(Integer.parseInt(id));
 

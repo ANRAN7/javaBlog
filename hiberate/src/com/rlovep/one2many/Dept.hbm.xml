@@ -8,7 +8,7 @@
        <id name="id" >
           <generator class="native"></generator>
        </id>
-       <property name="Dname" column="d_name"></property>
+       <property name="Dname" ></property>
        <!-- 
 			一对多关联映射配置  （通过部门管理到员工）
 			Dept 映射关键点：
@@ -19,9 +19,24 @@
 			
 			inverse=false  set集合映射的默认值； 表示有控制权
 		 -->
-       <set name="emps" cascade="save-update,delete" table="one_employee" inverse="false">
+		 	<!-- 
+			集合属性，默认使用懒加载 
+			lazy
+				true 懒加载
+				extra 懒加载(智能)
+				false 关闭懒加载
+		
+		-->
+       <set name="emps" cascade="save-update,delete" table="one_employee" inverse="false" lazy="true">
            <key column="dept_id"></key>
            <one-to-many class="Employee"></one-to-many>
        </set>
    </class>
+   <!-- 存放sql语句 -->
+	<query name="getAllDept">
+		<![CDATA[
+			from Dept d where id < ?
+		]]>
+		
+	</query>
 </hibernate-mapping>

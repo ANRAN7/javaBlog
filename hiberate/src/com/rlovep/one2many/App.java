@@ -31,9 +31,9 @@ public class App {
 		//创建对象
 		Employee employee=new Employee();
 		Employee employee2=new Employee();
-		employee.setEname("peace1");
+		employee.setEname("peace4");
 		employee.setSalary(300);
-		employee2.setEname("peace2");
+		employee2.setEname("peace5");
 		employee2.setSalary(499);
 		//关系set创建
 		Set<Employee>emps=new HashSet<>();
@@ -41,7 +41,7 @@ public class App {
 		emps.add(employee2);
 		//创建dept
 		Dept dept=new Dept();
-		dept.setDname("ptoo15项目");
+		dept.setDname("ptoo13项目");
 		dept.setEmps(emps);
 		//持久化
 		session.save(dept);

@@ -23,14 +23,14 @@ public abstract class BaseServlet extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
 	//创建service，子类需要能够访问，采用protected
-	protected IDinnerTableService tableService1=BeanFactory.getInstance("dinnerTableService", IDinnerTableService.class);
-	protected IFoodTypeService foodTypeService1 = BeanFactory.getInstance(
+	protected IDinnerTableService tableService=BeanFactory.getInstance("dinnerTableService", IDinnerTableService.class);
+	protected IFoodTypeService foodTypeService = BeanFactory.getInstance(
 			"foodTypeService", IFoodTypeService.class);
-	protected IFoodService foodService1 = BeanFactory.getInstance("foodService",
+	protected IFoodService foodService = BeanFactory.getInstance("foodService",
 			IFoodService.class);
-	protected IOrdersService ordersService1 = BeanFactory.getInstance("ordersService",
+	protected IOrdersService ordersService = BeanFactory.getInstance("ordersService",
 			IOrdersService.class);
-	protected IOrderDetailService orderDetailService1 = BeanFactory.getInstance("orderDetailService",
+	protected IOrderDetailService orderDetailService= BeanFactory.getInstance("orderDetailService",
 			IOrderDetailService.class);
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

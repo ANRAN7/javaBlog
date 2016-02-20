@@ -29,11 +29,7 @@ public class IndexServlet extends BaseServlet {
 	private static final long serialVersionUID = 1L;
 	public Object getMenu(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		IDinnerTableService tableService=BeanFactory.getInstance("dinnerTableService", IDinnerTableService.class);
-		IFoodTypeService foodTypeService= BeanFactory.getInstance(
-				"foodTypeService", IFoodTypeService.class);
-		IFoodService foodService= BeanFactory.getInstance("foodService",
-				IFoodService.class);
+	
 		Object uri = null;
 		HttpSession session = request.getSession();// 用于存储订单信息
 		// 获取session里的值
@@ -91,8 +87,7 @@ public class IndexServlet extends BaseServlet {
 
 	public Object searchFood(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		IFoodService foodService= BeanFactory.getInstance("foodService",
-				IFoodService.class);
+		
 		Object uri=null;
 		
 		PageBean<Food> pb = new PageBean<Food>();
@@ -121,10 +116,7 @@ public class IndexServlet extends BaseServlet {
 	
 	public Object getFoodDetail(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		IFoodService foodService= BeanFactory.getInstance("foodService",
-				IFoodService.class);
-		IFoodTypeService foodTypeService= BeanFactory.getInstance(
-				"foodTypeService", IFoodTypeService.class);
+		
 		Object uri =null;
 		String id = request.getParameter("food");//获取食物id
 		Food food = foodService.findById(Integer.parseInt(id));
