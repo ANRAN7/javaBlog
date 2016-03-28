@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.rlovep.rmi.Ihello&apos; to &apos;IHello&apos;&#x0A;- Original project: &apos;nioStudy&apos;&#x0A;- Original element: &apos;com.rlovep.rmi.Ihello&apos;&#x0A;- Renamed element: &apos;com.rlovep.rmi.IHello&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Ihello&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.rlovep.rmi{Ihello.java[Ihello" matchStrategy="1" name="IHello" qualified="false" references="true" similarDeclarations="false" stamp="1453712703751" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd"  default-autowire="byName">
+      <!-- 根据“名称”自动装配： userAction和userService注入的属性，会去ioc容器中自动查找与属性同名的对象 -->
+      <!-- 也可以定义到全局， 这样就不用每个bean节点都去写autowire=”byName” 由于全局的存在，下面的byName可以忽视-->
+      <bean   id="userDao" class="com.rlovep.property.UserDao"></bean>
+      <bean id="userService" class="com.rlovep.property.UserService" autowire="byName"></bean>
+      <bean id="userAction" class="com.rlovep.property.UserAction" autowire="byName"></bean>
+        
+        
+</beans>

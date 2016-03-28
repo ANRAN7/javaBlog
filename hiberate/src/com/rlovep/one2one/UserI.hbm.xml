@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.rlovep.one2one">
+<!-- 外键映射 -->
+ <!--  <class name="UserI">
+      <id name="userId">
+         <generator class="native"></generator>
+      </id>
+      <property name="userName" length="20"></property>
+      
+         一对一映射没有外键
+         可以单方向的一对一，省略one-to-one就行；
+         property-ref="user",双向关联必要条件
+      
+      <one-to-one name="idCard" class="IdCard"  property-ref="user"></one-to-one>
+  </class> -->
+  <class name="UserI" table="t_user">
+		<id name="userId">
+			<generator class="native"></generator>
+		</id>	
+		<property name="userName" length="20"></property>
+		<!-- 
+			一对一映射： 没有外键方
+			可以单方向的一对一，省略one-to-one就行；
+		 -->
+		 <one-to-one name="idCard" class="IdCard"></one-to-one>
+			 
+	</class>
+
+</hibernate-mapping>

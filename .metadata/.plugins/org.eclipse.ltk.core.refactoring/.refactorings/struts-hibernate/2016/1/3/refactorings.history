@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;hibernate-struts/src/com.rlovep.entity&apos;&#x0A;- Original project: &apos;struts-hibernate&apos;&#x0A;- Destination element: &apos;hibernate-struts/src/com.rlovep.entity&apos;&#x0A;- Original elements:&#x0A;     cn.itcast.entity.Dept.java&#x0A;     cn.itcast.entity.Employee.java" description="Copy compilation units" destination="=hibernate-struts/src&lt;com.rlovep.entity" element1="/src&lt;cn.itcast.entity{Dept.java" element2="/src&lt;cn.itcast.entity{Employee.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1452568552114" units="2" version="1.0"/>
+</session>

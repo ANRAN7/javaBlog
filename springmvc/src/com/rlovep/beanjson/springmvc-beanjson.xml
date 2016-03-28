@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    	 http://www.springframework.org/schema/beans/spring-beans.xsd
+     	 http://www.springframework.org/schema/context
+         http://www.springframework.org/schema/context/spring-context.xsd
+         http://www.springframework.org/schema/aop
+         http://www.springframework.org/schema/aop/spring-aop.xsd
+         http://www.springframework.org/schema/tx
+     	 http://www.springframework.org/schema/tx/spring-tx.xsd
+     	 http://www.springframework.org/schema/mvc
+         http://www.springframework.org/schema/mvc/spring-mvc.xsd
+     	 ">
+      	<!-- Action，让springioc容器去扫描带@Controller的类 -->
+	<context:component-scan base-package="com.rlovep.beanjson"/>
+	<!-- <mvc:annotation-driven /> -->
+	<!-- 视图解析器 -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/jsp/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean>
+   <mvc:annotation-driven />
+		<!--  
+			1）导入jackson-core-asl-1.9.11.jar和jackson-mapper-asl-1.9.11.jar
+			2）在业务方法的返回值和权限之间使用@ResponseBody注解表示返回值对象需要转成JSON文本
+			3）在spring.xml配置文件中编写如下代码：
+			<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+				<property name="messageConverters">
+						<list>
+							<bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"/>
+						</list>
+				</property>
+		    </bean>
+		--> 	 
+</beans>   

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Dept.java&apos; to &apos;sshDemo/src/com.rlovep.entity&apos;&#x0A;- Original project: &apos;spring-h&apos;&#x0A;- Destination element: &apos;sshDemo/src/com.rlovep.entity&apos;&#x0A;- Original element: &apos;cn.itcast.entity.Dept.java&apos;" description="Copy compilation unit" destination="=sshDemo/src&lt;com.rlovep.entity" element1="/src&lt;cn.itcast.entity{Dept.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1453028757668" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;hibernate-struts/WebContent/id.html&apos; to &apos;id.jsp&apos;" description="Rename resource &apos;id.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/id.html" name="id.jsp" stamp="1452577452757" updateReferences="true"/>
+</session>

@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Wed Jan 20 22:39:04 HKT 2016
-org.eclipse.jst.jee.server\:/binary\:/home/peace/workspace/javaThink/sshDemo/WebContent/WEB-INF/lib/spring-web-4.2.3.RELEASE.jar=/home/peace/applications/javaee/apache-tomcat-7.0.64/webapps/sshDemo/WEB-INF/lib/spring-web-4.2.3.RELEASE.jar
-org.eclipse.jst.jee.server\:sshDemo=/home/peace/applications/javaee/apache-tomcat-7.0.64/webapps/sshDemo
+#Thu Mar 17 22:53:10 HKT 2016
+org.eclipse.jst.jee.server\:/binary\:/home/peace/workspace/javaThink/springmvc/WebContent/WEB-INF/lib/spring-web-4.2.3.RELEASE.jar=/home/peace/applications/javaee/apache-tomcat-7.0.64/webapps/springmvc/WEB-INF/lib/spring-web-4.2.3.RELEASE.jar
+org.eclipse.jst.jee.server\:springmvc=/home/peace/applications/javaee/apache-tomcat-7.0.64/webapps/springmvc

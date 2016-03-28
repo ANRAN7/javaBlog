@@ -1,0 +1,28 @@
+1458212570428	Rename resource 'DispatcherServlet-servlet.xml'
+1458213176749	Copy file
+1458213190773	Rename resource 'springmvc.xml'
+1458213472615	Copy file
+1458213488590	Rename resource 'springmvc-hello.xml'
+1458213833302	Copy file
+1458213886333	Rename resource 'springmvc-view.xml'
+1458215167071	Copy file
+1458215179538	Rename resource 'springmvc-view.xml'
+1458215628420	Delete element
+1458216120410	Copy file
+1458216131774	Rename resource 'springmvc-view.xml'
+1458217659630	Copy file
+1458220670702	Rename resource '01_emp.jsp'
+1458221839905	Copy file
+1458221858182	Rename resource 'springmvc-param.xml'
+1458222575768	Copy file
+1458223088951	Copy file
+1458223101983	Rename resource 'springmvc-typeChange.xml'
+1458223268061	Rename resource '04_empAll.jsp'
+1458223402762	Delete elements
+1458223565002	Copy file
+1458223579855	Rename resource 'springmvc-typeChange.xml'
+1458223710274	Rename resource '05_edit.jsp'
+1458224032320	Rename resource '06_bean2json.jsp'
+1458224101277	Rename package 'com.rlovep.branjson'
+1458224106402	Copy file
+1458224118313	Rename resource 'springmvc-forward.xml'

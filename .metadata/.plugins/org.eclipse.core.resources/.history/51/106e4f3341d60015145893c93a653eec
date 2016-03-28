@@ -1,0 +1,20 @@
+package com.netease.yunyin;
+
+import java.util.Scanner;
+
+public class WordCount {
+      public static void main(String[] args) {
+    	 
+		Scanner in=new Scanner(System.in);
+		String s=" ";
+		int n=0;
+		while(in.hasNextLine()){
+			n++;
+			while(in.hasNext()){
+				s+=" "+in.next();
+			}
+			if(n>5)break;
+		}
+		System.out.println(s);
+	}
+}

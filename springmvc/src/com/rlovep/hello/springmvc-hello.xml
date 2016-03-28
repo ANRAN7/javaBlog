@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    	 http://www.springframework.org/schema/beans/spring-beans.xsd
+     	 http://www.springframework.org/schema/context
+         http://www.springframework.org/schema/context/spring-context.xsd
+         http://www.springframework.org/schema/aop
+         http://www.springframework.org/schema/aop/spring-aop.xsd
+         http://www.springframework.org/schema/tx
+     	 http://www.springframework.org/schema/tx/spring-tx.xsd
+     	 http://www.springframework.org/schema/mvc
+         http://www.springframework.org/schema/mvc/spring-mvc.xsd
+     	 ">
+     	 <!--控制器-->
+     	 <bean name="/hello.action" class="com.rlovep.hello.HelloControl"></bean>
+     	 <!-- 当使用的是路径精确配置时，可以省略一下配置 -->
+     	  <!-- 映射器(框架) -->  
+         <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"></bean>
+         <!-- 适配器 -->
+         <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"></bean>
+         <!-- 视图解析器 -->
+         <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"></bean>
+     	 
+</beans>   

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+           <!--默认无参构造器  -->
+           <bean id="user1" class="com.rlovep.hello.User"></bean>
+           <!-- 带参数的构造器 -->
+           <bean id="user2" class="com.rlovep.hello.User">
+              <constructor-arg index="0" type="int" value="10"></constructor-arg>
+              <constructor-arg index="1" type="java.lang.String" value="peace"></constructor-arg>
+           </bean>
+           <!-- 定义一个字符串bean 使用String的有参数构造函数-->
+           <bean id="name" class="java.lang.String">
+				<constructor-arg index="0" type="java.lang.String" value="peace2"></constructor-arg>              
+           </bean>
+           <!-- 使用上面建立的字符串bean -->
+           <bean id="user3" class="com.rlovep.hello.User">
+             <constructor-arg index="0" value="11"></constructor-arg>
+             <constructor-arg index="1"	ref="name"></constructor-arg>
+           </bean>
+           <!-- 工厂类创建对象，实例方法 -->
+           <!-- 先创建工厂 -->
+           <bean id="factory" class="com.rlovep.hello.ObjectFactory"></bean>
+           <!-- 创建user -->
+           <bean id="user4" factory-bean="factory" factory-method="getUser"></bean>
+
+	<!-- 工厂类静态方法 -->
+	<!-- class 指定的就是工厂类型 factory-method 一定是工厂里面的“静态方法” -->
+	<bean id="user5" class="com.rlovep.hello.ObjectFactory"
+		factory-method="getUseStatic"></bean>
+          <!-- 对象写法 -->
+	<!-- 
+	问题：spring配置文件中，bean节点的id与name属性的区别?
+		id 不能有特殊符号, 且唯一，且不能以数字开始
+		name 可以有特殊符号
+	 --> 
+      <!-- 带参数的构造器 -->
+           <bean id="user6" name="2user" class="com.rlovep.hello.User">
+              <constructor-arg index="0" type="int" value="6"></constructor-arg>
+              <constructor-arg index="1" type="java.lang.String" value="peace6"></constructor-arg>
+           </bean>     
+ </beans>

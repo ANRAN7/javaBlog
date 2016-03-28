@@ -44,10 +44,10 @@
 		<!-- 开启查询缓存 -->
 		<property name="hibernate.cache.use_query_cache">true</property>
 		<!-- c. 指定哪一些类，需要加入二级缓存 -->
-		<class-cache usage="read-write" class="com.rlovep.one2many.Dept"/>
-		<class-cache usage="read-only" class="com.rlovep.one2many.Employee"/>
+		<!-- <class-cache usage="read-write" class="com.rlovep.one2many.Dept"/> -->
+		<!-- <class-cache usage="read-only" class="com.rlovep.one2many.Employee"/> -->
 		<!-- 集合缓存[集合缓存的元素对象，也加加入二级缓存] -->
-		<collection-cache usage="read-write" collection="com.rlovep.one2many.Dept.emps"/>
+		<!-- <collection-cache usage="read-write" collection="com.rlovep.one2many.Dept.emps"/> -->
 		<!-- 3. 加载所有映射 -->
 		<!-- <mapping resource="com/rlovep/hello/Employee.hbm.xml"/> -->
 		<!-- <mapping resource="com/rlovep/compositekey/User.hbm.xml"/> -->

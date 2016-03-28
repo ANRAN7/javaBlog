@@ -5,6 +5,10 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/peace/workspace/mybatis-day01"/>
+			<item value="/home/peace/workspace/springmvc-day02"/>
+			<item value="/home/peace/workspace/emp"/>
+			<item value="/home/peace/workspace/springmvc-day01"/>
 			<item value="/home/peace/workspace/hr_sys"/>
 			<item value="/home/peace/workspace/ssh"/>
 			<item value="/home/peace/workspace/spring-h"/>
@@ -21,10 +25,6 @@
 			<item value="/home/peace/workspace/struts04"/>
 			<item value="/home/peace/workspace/struts03_eg"/>
 			<item value="/home/peace/workspace/struts03"/>
-			<item value="/home/peace/workspace/struts02"/>
-			<item value="/home/peace/workspace/day28补发/struts20150313"/>
-			<item value="/home/peace/workspace/day28补发/mystruts"/>
-			<item value="/home/peace/workspace/hotel_v1源码"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
